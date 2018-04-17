@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+  
+  <settings>		
+    <setting name="defaultExecutorType" value="REUSE" />
+  </settings>
+ 
+  <typeAliases>
+  	
+  </typeAliases>
+  
+        <!-- <property name="mapperLocations"  >
+			<list>
+				<value>classpath:com/sojson/common/mapper/*.xml</value>
+			</list>
+		</property> -->
+  
+    <!--** 表示多层   -->
+	<!-- <mappers>	<package name="com.etoak.models.**.mapper"/>
+		<package name="com/sojson/common/mapper/*.xml"/>
+	 -->
+	<!--加载的是mapper这个baiofd  -->
+	<mappers>
+		<package name="com.sojson.common.mapper"/>
+	</mappers>
+	
+  
+  
+ <!-- 
+ <mappers>
+    <mapper resource="mapper/StudentMapper.xml"/>
+ </mappers>
+    <plugins>  
+       <plugin interceptor="net.wenyifan.common.mybatis.plugin.PageInterceptor">    
+       </plugin>  
+    </plugins>    
+-->
+
+
+</configuration>
