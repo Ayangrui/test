@@ -1,0 +1,1286 @@
+2018-03-26 14:16:49 -Starting BootdoApplication on USER-20180111OB with PID 20548 (started by Administrator in C:\Users\Administrator\Desktop\开源项目\bootdo\bootdo)
+2018-03-26 14:16:49 -Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 14:16:49 -The following profiles are active: dev
+2018-03-26 14:17:10 -ApplicationContext registed-->org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53fe15ff: startup date [Mon Mar 26 14:16:50 CST 2018]; root of context hierarchy
+2018-03-26 14:17:21 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
+2018-03-26 14:17:21 -==> Parameters: 
+2018-03-26 14:17:21 -<==      Total: 1
+2018-03-26 14:17:21 -Started BootdoApplication in 33.029 seconds (JVM running for 33.996)
+2018-03-26 14:24:32 -Starting TestDemo on USER-20180111OB with PID 20728 (started by Administrator in C:\Users\Administrator\Desktop\开源项目\bootdo\bootdo)
+2018-03-26 14:24:32 -Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 14:24:32 -The following profiles are active: dev
+2018-03-26 14:24:45 -ApplicationContext registed-->org.springframework.web.context.support.GenericWebApplicationContext@2d778add: startup date [Mon Mar 26 14:24:33 CST 2018]; root of context hierarchy
+2018-03-26 14:24:54 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
+2018-03-26 14:24:54 -==> Parameters: 
+2018-03-26 14:24:54 -<==      Total: 1
+2018-03-26 14:24:54 -Started TestDemo in 22.985 seconds (JVM running for 24.05)
+2018-03-26 14:25:42 -Starting BootdoApplication on USER-20180111OB with PID 23140 (started by Administrator in C:\Users\Administrator\Desktop\开源项目\bootdo\bootdo)
+2018-03-26 14:25:42 -Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 14:25:42 -The following profiles are active: dev
+2018-03-26 14:25:54 -Starting BootdoApplication on USER-20180111OB with PID 23436 (started by Administrator in C:\Users\Administrator\Desktop\开源项目\bootdo\bootdo)
+2018-03-26 14:25:54 -Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 14:25:54 -The following profiles are active: dev
+2018-03-26 14:26:11 -ApplicationContext registed-->org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53fe15ff: startup date [Mon Mar 26 14:25:54 CST 2018]; root of context hierarchy
+2018-03-26 14:26:17 -Failed to start end point associated with ProtocolHandler ["http-nio-80"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.bootdo.BootdoApplication.main(BootdoApplication.java:15)
+2018-03-26 14:26:17 -Failed to start connector [Connector[HTTP/1.1-80]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-80]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.bootdo.BootdoApplication.main(BootdoApplication.java:15)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 common frames omitted
+2018-03-26 14:26:18 -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+
+2018-03-26 14:29:01 -Starting BootdoApplication on USER-20180111OB with PID 23048 (started by Administrator in C:\Users\Administrator\Desktop\开源项目\bootdo\bootdo)
+2018-03-26 14:29:01 -Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 14:29:01 -The following profiles are active: dev
+2018-03-26 14:29:16 -ApplicationContext registed-->org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53fe15ff: startup date [Mon Mar 26 14:29:02 CST 2018]; root of context hierarchy
+2018-03-26 14:29:27 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
+2018-03-26 14:29:27 -==> Parameters: 
+2018-03-26 14:29:27 -<==      Total: 1
+2018-03-26 14:29:27 -Started BootdoApplication in 27.108 seconds (JVM running for 28.02)
+2018-03-26 14:29:39 -请求地址 : http://localhost:8089/login
+2018-03-26 14:29:39 -HTTP METHOD : GET
+2018-03-26 14:29:39 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-26 14:29:39 -参数 : []
+2018-03-26 14:29:39 -耗时 : 2
+2018-03-26 14:29:39 -返回值 : login
+2018-03-26 14:29:41 -请求地址 : http://localhost:8089/login;JSESSIONID=e07990cb-366c-44f6-a780-228c8564a758
+2018-03-26 14:29:41 -HTTP METHOD : GET
+2018-03-26 14:29:41 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-26 14:29:41 -参数 : []
+2018-03-26 14:29:41 -耗时 : 5
+2018-03-26 14:29:41 -返回值 : login
+2018-03-26 14:29:49 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-03-26 14:29:49 -==> Parameters: admin(String)
+2018-03-26 14:29:49 -<==      Total: 1
+2018-03-26 14:29:49 -请求地址 : http://localhost:8089/login
+2018-03-26 14:29:49 -HTTP METHOD : POST
+2018-03-26 14:29:49 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-03-26 14:29:49 -参数 : [admin, 111111]
+2018-03-26 14:29:49 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-03-26 14:29:49 -==> Parameters: admin(String)
+2018-03-26 14:29:49 -<==      Total: 1
+2018-03-26 14:29:49 -耗时 : 32
+2018-03-26 14:29:49 -返回值 : {msg=操作成功, code=0}
+2018-03-26 14:29:49 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 14:29:49 -==> Parameters: 1(Long), admin(String), 登录(String), 32(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-03-26 14:29:49.805(Timestamp)
+2018-03-26 14:29:49 -<==    Updates: 1
+2018-03-26 14:29:49 -请求地址 : http://localhost:8089/index
+2018-03-26 14:29:49 -HTTP METHOD : GET
+2018-03-26 14:29:49 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-03-26 14:29:49 -参数 : [{}]
+2018-03-26 14:29:49 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-03-26 14:29:49 -==> Parameters: 1(Long)
+2018-03-26 14:29:49 -<==      Total: 28
+2018-03-26 14:29:49 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-03-26 14:29:49 -==> Parameters: 138(Long)
+2018-03-26 14:29:49 -<==      Total: 1
+2018-03-26 14:29:49 -耗时 : 77
+2018-03-26 14:29:49 -返回值 : index_v1
+2018-03-26 14:29:50 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 14:29:50 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 77(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2018-03-26 14:29:49.967(Timestamp)
+2018-03-26 14:29:50 -<==    Updates: 1
+2018-03-26 14:29:50 -请求地址 : http://localhost:8089/main
+2018-03-26 14:29:50 -HTTP METHOD : GET
+2018-03-26 14:29:50 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 14:29:50 -参数 : []
+2018-03-26 14:29:50 -耗时 : 0
+2018-03-26 14:29:50 -返回值 : main
+2018-03-26 14:29:50 -请求地址 : http://localhost:8089/oa/notify/message
+2018-03-26 14:29:50 -HTTP METHOD : GET
+2018-03-26 14:29:50 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-03-26 14:29:50 -参数 : []
+2018-03-26 14:29:50 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2018-03-26 14:29:50 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2018-03-26 14:29:50 -<==      Total: 0
+2018-03-26 14:29:50 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2018-03-26 14:29:50 -==> Parameters: 1(Long), 0(String)
+2018-03-26 14:29:50 -<==      Total: 1
+2018-03-26 14:29:50 -耗时 : 26
+2018-03-26 14:29:50 -返回值 : com.bootdo.common.utils.PageUtils@16123169
+2018-03-26 14:29:50 -请求地址 : http://localhost:8089/main
+2018-03-26 14:29:50 -HTTP METHOD : GET
+2018-03-26 14:29:50 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 14:29:50 -参数 : []
+2018-03-26 14:29:50 -耗时 : 1
+2018-03-26 14:29:50 -返回值 : main
+2018-03-26 14:29:54 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+2018-03-26 14:29:54 -==> Parameters: 1(Long)
+2018-03-26 14:29:54 -<==      Total: 47
+2018-03-26 14:29:54 -请求地址 : http://localhost:8089/common/dict
+2018-03-26 14:29:54 -HTTP METHOD : GET
+2018-03-26 14:29:54 -CLASS_METHOD : com.bootdo.common.controller.DictController.dict
+2018-03-26 14:29:54 -参数 : []
+2018-03-26 14:29:54 -耗时 : 0
+2018-03-26 14:29:54 -返回值 : common/dict/dict
+2018-03-26 14:29:55 -请求地址 : http://localhost:8089/common/dict/type
+2018-03-26 14:29:55 -HTTP METHOD : GET
+2018-03-26 14:29:55 -CLASS_METHOD : com.bootdo.common.controller.DictController.listType
+2018-03-26 14:29:55 -参数 : []
+2018-03-26 14:29:55 -请求地址 : http://localhost:8089/common/dict/list
+2018-03-26 14:29:55 -HTTP METHOD : GET
+2018-03-26 14:29:55 -CLASS_METHOD : com.bootdo.common.controller.DictController.list
+2018-03-26 14:29:55 -参数 : [{limit=10, offset=0}]
+2018-03-26 14:29:55 -==>  Preparing: select distinct `type` , description from sys_dict 
+2018-03-26 14:29:55 -==> Parameters: 
+2018-03-26 14:29:55 -<==      Total: 31
+2018-03-26 14:29:55 -耗时 : 17
+2018-03-26 14:29:55 -返回值 : [DictDO{id=null, name='null', value='null', type='del_flag', description='删除标记', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='show_hide', description='显示/隐藏', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='yes_no', description='是/否', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='color', description='颜色值', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='theme', description='主题方案', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_area_type', description='区域类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_office_type', description='机构类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_office_common', description='快捷通用部门', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_office_grade', description='机构等级', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_data_scope', description='数据范围', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_user_type', description='用户类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_theme', description='站点主题', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_module', description='栏目模型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_show_modes', description='展现方式', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_del_flag', description='内容状态', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_posid', description='推荐位', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_guestbook', description='留言板分类', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_leave_type', description='请假类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_log_type', description='日志类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='act_type', description='流程类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='act_category', description='流程分类', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_category', description='代码生成分类', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_query_type', description='查询方式', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_show_type', description='字段生成方案', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_java_type', description='Java类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sex', description='性别', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_notify_type', description='通知通告类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_notify_status', description='通知通告状态', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_notify_read', description='通知通告状态', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='blog_type', description='博客类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='hobby', description='爱好', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}]
+2018-03-26 14:29:55 -==>  Preparing: select `id`,`name`,`value`,`type`,`description`,`sort`,`parent_id`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from sys_dict order by id desc limit ?, ? 
+2018-03-26 14:29:55 -==> Parameters: 0(Integer), 10(Integer)
+2018-03-26 14:29:55 -<==      Total: 10
+2018-03-26 14:29:55 -==>  Preparing: select count(*) from sys_dict 
+2018-03-26 14:29:55 -==> Parameters: 
+2018-03-26 14:29:55 -<==      Total: 1
+2018-03-26 14:29:55 -耗时 : 57
+2018-03-26 14:29:55 -返回值 : com.bootdo.common.utils.PageUtils@4f0b75cf
+2018-03-26 14:29:58 -请求地址 : http://localhost:8089/common/sysFile
+2018-03-26 14:29:58 -HTTP METHOD : GET
+2018-03-26 14:29:58 -CLASS_METHOD : com.bootdo.common.controller.FileController.sysFile
+2018-03-26 14:29:58 -参数 : [{}]
+2018-03-26 14:29:58 -耗时 : 1
+2018-03-26 14:29:58 -返回值 : common/file/file
+2018-03-26 14:29:58 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 14:29:58 -HTTP METHOD : GET
+2018-03-26 14:29:58 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 14:29:58 -参数 : [{limit=12, offset=0, type=}]
+2018-03-26 14:29:58 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file order by id desc limit ?, ? 
+2018-03-26 14:29:58 -==> Parameters: 0(Integer), 12(Integer)
+2018-03-26 14:29:58 -<==      Total: 8
+2018-03-26 14:29:58 -==>  Preparing: select count(*) from sys_file 
+2018-03-26 14:29:58 -==> Parameters: 
+2018-03-26 14:29:58 -<==      Total: 1
+2018-03-26 14:29:58 -耗时 : 16
+2018-03-26 14:29:58 -返回值 : com.bootdo.common.utils.PageUtils@135f059b
+2018-03-26 14:30:03 -请求地址 : http://localhost:8089/common/generator
+2018-03-26 14:30:03 -HTTP METHOD : GET
+2018-03-26 14:30:03 -CLASS_METHOD : com.bootdo.common.controller.GeneratorController.generator
+2018-03-26 14:30:03 -参数 : []
+2018-03-26 14:30:03 -耗时 : 0
+2018-03-26 14:30:03 -返回值 : common/generator/list
+2018-03-26 14:30:03 -请求地址 : http://localhost:8089/common/generator/list
+2018-03-26 14:30:03 -HTTP METHOD : GET
+2018-03-26 14:30:03 -CLASS_METHOD : com.bootdo.common.controller.GeneratorController.list
+2018-03-26 14:30:03 -参数 : []
+2018-03-26 14:30:03 -==>  Preparing: select table_name tableName, engine, table_comment tableComment, create_time createTime from information_schema.tables where table_schema = (select database()) 
+2018-03-26 14:30:03 -==> Parameters: 
+2018-03-26 14:30:03 -<==      Total: 40
+2018-03-26 14:30:03 -耗时 : 26
+2018-03-26 14:30:03 -返回值 : [{engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_evt_log}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_ge_bytearray}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_ge_property}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_hi_actinst}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_hi_attachment}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_hi_comment}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_hi_detail}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_hi_identitylink}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_hi_procinst}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_hi_taskinst}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_hi_varinst}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_id_group}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_id_info}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_id_membership}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_id_user}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_procdef_info}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_re_deployment}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_re_model}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_re_procdef}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_ru_event_subscr}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_ru_execution}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_ru_identitylink}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_ru_job}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_ru_task}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=, tableName=act_ru_variable}, {engine=InnoDB, createTime=2018-03-26 14:14:43.0, tableComment=文章内容, tableName=blog_content}, {engine=InnoDB, createTime=2018-03-26 14:14:44.0, tableComment=通知通告, tableName=oa_notify}, {engine=InnoDB, createTime=2018-03-26 14:14:44.0, tableComment=通知通告发送记录, tableName=oa_notify_record}, {engine=InnoDB, createTime=2018-03-26 14:14:44.0, tableComment=审批流程测试表, tableName=salary}, {engine=InnoDB, createTime=2018-03-26 14:14:44.0, tableComment=部门管理, tableName=sys_dept}, {engine=InnoDB, createTime=2018-03-26 14:14:44.0, tableComment=字典表, tableName=sys_dict}, {engine=InnoDB, createTime=2018-03-26 14:14:44.0, tableComment=文件上传, tableName=sys_file}, {engine=InnoDB, createTime=2018-03-26 14:14:44.0, tableComment=系统日志, tableName=sys_log}, {engine=InnoDB, createTime=2018-03-26 14:14:44.0, tableComment=菜单管理, tableName=sys_menu}, {engine=InnoDB, createTime=2018-03-26 14:14:44.0, tableComment=角色, tableName=sys_role}, {engine=InnoDB, createTime=2018-03-26 14:14:44.0, tableComment=角色与菜单对应关系, tableName=sys_role_menu}, {engine=MyISAM, createTime=2018-03-26 14:14:50.0, tableComment=, tableName=sys_task}, {engine=InnoDB, createTime=2018-03-26 14:14:45.0, tableComment=, tableName=sys_user}, {engine=InnoDB, createTime=2018-03-26 14:14:45.0, tableComment=, tableName=sys_user_plus}, {engine=InnoDB, createTime=2018-03-26 14:14:45.0, tableComment=用户与角色对应关系, tableName=sys_user_role}]
+2018-03-26 14:30:06 -请求地址 : http://localhost:8089/common/job
+2018-03-26 14:30:06 -HTTP METHOD : GET
+2018-03-26 14:30:06 -CLASS_METHOD : com.bootdo.common.controller.JobController.taskScheduleJob
+2018-03-26 14:30:06 -参数 : []
+2018-03-26 14:30:06 -耗时 : 0
+2018-03-26 14:30:06 -返回值 : common/job/job
+2018-03-26 14:30:06 -请求地址 : http://localhost:8089/common/job/list
+2018-03-26 14:30:06 -HTTP METHOD : GET
+2018-03-26 14:30:06 -CLASS_METHOD : com.bootdo.common.controller.JobController.list
+2018-03-26 14:30:06 -参数 : [{limit=10, offset=0}]
+2018-03-26 14:30:06 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc limit ?, ? 
+2018-03-26 14:30:06 -==> Parameters: 0(Integer), 10(Integer)
+2018-03-26 14:30:06 -<==      Total: 1
+2018-03-26 14:30:06 -==>  Preparing: select count(*) from sys_task 
+2018-03-26 14:30:06 -==> Parameters: 
+2018-03-26 14:30:06 -<==      Total: 1
+2018-03-26 14:30:06 -耗时 : 71
+2018-03-26 14:30:06 -返回值 : com.bootdo.common.utils.PageUtils@2241ee77
+2018-03-26 14:30:14 -请求地址 : http://localhost:8089/oa/notify/selfNotify
+2018-03-26 14:30:14 -HTTP METHOD : GET
+2018-03-26 14:30:14 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.selefNotify
+2018-03-26 14:30:14 -参数 : []
+2018-03-26 14:30:14 -耗时 : 0
+2018-03-26 14:30:14 -返回值 : oa/notify/selfNotify
+2018-03-26 14:30:14 -请求地址 : http://localhost:8089/oa/notify/selfList
+2018-03-26 14:30:14 -HTTP METHOD : GET
+2018-03-26 14:30:14 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.selfList
+2018-03-26 14:30:14 -参数 : [{limit=10, offset=0}]
+2018-03-26 14:30:14 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2018-03-26 14:30:14 -==> Parameters: 1(Long), 0(Integer), 10(Integer)
+2018-03-26 14:30:14 -<==      Total: 5
+2018-03-26 14:30:14 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-03-26 14:30:14 -==> Parameters: 1(Long)
+2018-03-26 14:30:14 -<==      Total: 1
+2018-03-26 14:30:14 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-03-26 14:30:14 -==> Parameters: 1(Long)
+2018-03-26 14:30:14 -<==      Total: 1
+2018-03-26 14:30:14 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-03-26 14:30:14 -==> Parameters: 1(Long)
+2018-03-26 14:30:14 -<==      Total: 1
+2018-03-26 14:30:14 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-03-26 14:30:14 -==> Parameters: 1(Long)
+2018-03-26 14:30:14 -<==      Total: 1
+2018-03-26 14:30:14 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user where user_id = ? 
+2018-03-26 14:30:14 -==> Parameters: 1(Long)
+2018-03-26 14:30:14 -<==      Total: 1
+2018-03-26 14:30:14 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2018-03-26 14:30:14 -==> Parameters: 1(Long), null
+2018-03-26 14:30:14 -<==      Total: 1
+2018-03-26 14:30:14 -耗时 : 52
+2018-03-26 14:30:14 -返回值 : com.bootdo.common.utils.PageUtils@29fe0023
+2018-03-26 14:30:15 -请求地址 : http://localhost:8089/oa/notify
+2018-03-26 14:30:15 -HTTP METHOD : GET
+2018-03-26 14:30:15 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.oaNotify
+2018-03-26 14:30:15 -参数 : []
+2018-03-26 14:30:15 -耗时 : 6
+2018-03-26 14:30:15 -返回值 : oa/notify/notify
+2018-03-26 14:30:16 -请求地址 : http://localhost:8089/oa/notify/list
+2018-03-26 14:30:16 -HTTP METHOD : GET
+2018-03-26 14:30:16 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.list
+2018-03-26 14:30:16 -参数 : [{limit=10, offset=0}]
+2018-03-26 14:30:16 -==>  Preparing: select `id`,`type`,`title`,`content`,`files`,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify order by id desc limit ?, ? 
+2018-03-26 14:30:16 -==> Parameters: 0(Integer), 10(Integer)
+2018-03-26 14:30:16 -<==      Total: 5
+2018-03-26 14:30:16 -==>  Preparing: select `id`,`name`,`value`,`type`,`description`,`sort`,`parent_id`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from sys_dict WHERE value = ? and type = ? order by id desc 
+2018-03-26 14:30:16 -==> Parameters: 3(String), oa_notify_type(String)
+2018-03-26 14:30:16 -<==      Total: 1
+2018-03-26 14:30:16 -==>  Preparing: select `id`,`name`,`value`,`type`,`description`,`sort`,`parent_id`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from sys_dict WHERE value = ? and type = ? order by id desc 
+2018-03-26 14:30:16 -==> Parameters: 3(String), oa_notify_type(String)
+2018-03-26 14:30:16 -<==      Total: 1
+2018-03-26 14:30:16 -==>  Preparing: select `id`,`name`,`value`,`type`,`description`,`sort`,`parent_id`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from sys_dict WHERE value = ? and type = ? order by id desc 
+2018-03-26 14:30:16 -==> Parameters: 3(String), oa_notify_type(String)
+2018-03-26 14:30:16 -<==      Total: 1
+2018-03-26 14:30:16 -==>  Preparing: select `id`,`name`,`value`,`type`,`description`,`sort`,`parent_id`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from sys_dict WHERE value = ? and type = ? order by id desc 
+2018-03-26 14:30:16 -==> Parameters: 3(String), oa_notify_type(String)
+2018-03-26 14:30:16 -<==      Total: 1
+2018-03-26 14:30:16 -==>  Preparing: select `id`,`name`,`value`,`type`,`description`,`sort`,`parent_id`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from sys_dict WHERE value = ? and type = ? order by id desc 
+2018-03-26 14:30:16 -==> Parameters: 3(String), oa_notify_type(String)
+2018-03-26 14:30:16 -<==      Total: 1
+2018-03-26 14:30:16 -==>  Preparing: select count(*) from oa_notify 
+2018-03-26 14:30:16 -==> Parameters: 
+2018-03-26 14:30:16 -<==      Total: 1
+2018-03-26 14:30:16 -耗时 : 47
+2018-03-26 14:30:16 -返回值 : com.bootdo.common.utils.PageUtils@67dd112a
+2018-03-26 14:30:22 -请求地址 : http://localhost:8089/main
+2018-03-26 14:30:22 -HTTP METHOD : GET
+2018-03-26 14:30:22 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 14:30:22 -参数 : []
+2018-03-26 14:30:22 -耗时 : 1
+2018-03-26 14:30:22 -返回值 : main
+2018-03-26 14:30:34 -请求地址 : http://localhost:8089/sys/user/
+2018-03-26 14:30:34 -HTTP METHOD : GET
+2018-03-26 14:30:34 -CLASS_METHOD : com.bootdo.system.controller.UserController.user
+2018-03-26 14:30:34 -参数 : [{}]
+2018-03-26 14:30:34 -耗时 : 0
+2018-03-26 14:30:34 -返回值 : system/user/user
+2018-03-26 14:30:35 -请求地址 : http://localhost:8089/system/sysDept/tree
+2018-03-26 14:30:35 -HTTP METHOD : GET
+2018-03-26 14:30:35 -CLASS_METHOD : com.bootdo.system.controller.DeptController.tree
+2018-03-26 14:30:35 -参数 : []
+2018-03-26 14:30:35 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept order by dept_id desc 
+2018-03-26 14:30:35 -==> Parameters: 
+2018-03-26 14:30:35 -请求地址 : http://localhost:8089/sys/user/list
+2018-03-26 14:30:35 -HTTP METHOD : GET
+2018-03-26 14:30:35 -CLASS_METHOD : com.bootdo.system.controller.UserController.list
+2018-03-26 14:30:35 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2018-03-26 14:30:35 -<==      Total: 10
+2018-03-26 14:30:35 -耗时 : 42
+2018-03-26 14:30:35 -返回值 : {"checked":true,"children":[{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"15","parentId":"13","state":{"opened":true},"text":"测试二部"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"14","parentId":"13","state":{"opened":true},"text":"测试一部"}],"hasChildren":true,"hasParent":false,"id":"13","parentId":"0","state":{"opened":true},"text":"测试部"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"12","parentId":"11","state":{"opened":true},"text":"产品一部"}],"hasChildren":true,"hasParent":false,"id":"11","parentId":"0","state":{"opened":true},"text":"产品部"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"10","parentId":"9","state":{"opened":true},"text":"销售一部"}],"hasChildren":true,"hasParent":false,"id":"9","parentId":"0","state":{"opened":true},"text":"销售部"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"8","parentId":"6","state":{"opened":true},"text":"研发二部"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"7","parentId":"6","state":{"opened":true},"text":"研發一部"}],"hasChildren":true,"hasParent":false,"id":"6","parentId":"0","state":{"opened":true},"text":"研发部"}],"hasChildren":true,"hasParent":false,"id":"-1","parentId":"","state":{"opened":true},"text":"顶级节点"}
+2018-03-26 14:30:35 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user order by user_id desc limit ?, ? 
+2018-03-26 14:30:35 -==> Parameters: 0(Integer), 10(Integer)
+2018-03-26 14:30:35 -<==      Total: 10
+2018-03-26 14:30:35 -==>  Preparing: select count(*) from sys_user 
+2018-03-26 14:30:35 -==> Parameters: 
+2018-03-26 14:30:35 -<==      Total: 1
+2018-03-26 14:30:35 -耗时 : 75
+2018-03-26 14:30:35 -返回值 : com.bootdo.common.utils.PageUtils@71ee4bea
+2018-03-26 14:30:49 -请求地址 : http://localhost:8089/login
+2018-03-26 14:30:49 -HTTP METHOD : GET
+2018-03-26 14:30:49 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-26 14:30:49 -参数 : []
+2018-03-26 14:30:49 -耗时 : 7
+2018-03-26 14:30:49 -返回值 : login
+2018-03-26 14:30:57 -请求地址 : http://localhost:8089/login
+2018-03-26 14:30:57 -HTTP METHOD : POST
+2018-03-26 14:30:57 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-03-26 14:30:57 -参数 : [admin, 111111]
+2018-03-26 14:30:57 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-03-26 14:30:57 -==> Parameters: admin(String)
+2018-03-26 14:30:57 -<==      Total: 1
+2018-03-26 14:30:57 -耗时 : 4
+2018-03-26 14:30:57 -返回值 : {msg=操作成功, code=0}
+2018-03-26 14:30:57 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 14:30:57 -==> Parameters: 1(Long), admin(String), 登录(String), 4(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-03-26 14:30:57.606(Timestamp)
+2018-03-26 14:30:57 -请求地址 : http://localhost:8089/index
+2018-03-26 14:30:57 -HTTP METHOD : GET
+2018-03-26 14:30:57 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-03-26 14:30:57 -参数 : [{}]
+2018-03-26 14:30:57 -<==    Updates: 1
+2018-03-26 14:30:57 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-03-26 14:30:57 -==> Parameters: 1(Long)
+2018-03-26 14:30:57 -<==      Total: 28
+2018-03-26 14:30:57 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-03-26 14:30:57 -==> Parameters: 138(Long)
+2018-03-26 14:30:57 -<==      Total: 1
+2018-03-26 14:30:57 -耗时 : 27
+2018-03-26 14:30:57 -返回值 : index_v1
+2018-03-26 14:30:57 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 14:30:57 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 28(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2018-03-26 14:30:57.66(Timestamp)
+2018-03-26 14:30:57 -<==    Updates: 1
+2018-03-26 14:30:57 -请求地址 : http://localhost:8089/main
+2018-03-26 14:30:57 -HTTP METHOD : GET
+2018-03-26 14:30:57 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 14:30:57 -参数 : []
+2018-03-26 14:30:57 -耗时 : 0
+2018-03-26 14:30:57 -返回值 : main
+2018-03-26 14:30:57 -请求地址 : http://localhost:8089/oa/notify/message
+2018-03-26 14:30:57 -HTTP METHOD : GET
+2018-03-26 14:30:57 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-03-26 14:30:57 -参数 : []
+2018-03-26 14:30:57 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2018-03-26 14:30:57 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2018-03-26 14:30:57 -<==      Total: 0
+2018-03-26 14:30:57 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2018-03-26 14:30:57 -==> Parameters: 1(Long), 0(String)
+2018-03-26 14:30:57 -<==      Total: 1
+2018-03-26 14:30:57 -耗时 : 7
+2018-03-26 14:30:57 -返回值 : com.bootdo.common.utils.PageUtils@47d4cd92
+2018-03-26 14:30:57 -请求地址 : http://localhost:8089/main
+2018-03-26 14:30:57 -HTTP METHOD : GET
+2018-03-26 14:30:57 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 14:30:57 -参数 : []
+2018-03-26 14:30:57 -耗时 : 1
+2018-03-26 14:30:57 -返回值 : main
+2018-03-26 14:34:24 -请求地址 : http://localhost:8089/main
+2018-03-26 14:34:24 -HTTP METHOD : GET
+2018-03-26 14:34:24 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 14:34:24 -参数 : []
+2018-03-26 14:34:24 -耗时 : 0
+2018-03-26 14:34:24 -返回值 : main
+2018-03-26 14:35:11 -Starting BootdoApplication on USER-20180111OB with PID 23928 (started by Administrator in C:\Users\Administrator\Desktop\开源项目\bootdo\bootdo)
+2018-03-26 14:35:11 -Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 14:35:11 -The following profiles are active: dev
+2018-03-26 14:35:26 -ApplicationContext registed-->org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53fe15ff: startup date [Mon Mar 26 14:35:12 CST 2018]; root of context hierarchy
+2018-03-26 14:35:47 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
+2018-03-26 14:35:47 -==> Parameters: 
+2018-03-26 14:35:47 -<==      Total: 1
+2018-03-26 14:35:47 -Started BootdoApplication in 36.398 seconds (JVM running for 37.35)
+2018-03-26 14:35:55 -请求地址 : http://localhost:8089/login
+2018-03-26 14:35:55 -HTTP METHOD : GET
+2018-03-26 14:35:55 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-26 14:35:55 -参数 : []
+2018-03-26 14:35:55 -耗时 : 3
+2018-03-26 14:35:55 -返回值 : login
+2018-03-26 14:35:57 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-03-26 14:35:57 -==> Parameters: admin(String)
+2018-03-26 14:35:57 -<==      Total: 1
+2018-03-26 14:35:57 -请求地址 : http://localhost:8089/login
+2018-03-26 14:35:57 -HTTP METHOD : POST
+2018-03-26 14:35:57 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-03-26 14:35:57 -参数 : [admin, 111111]
+2018-03-26 14:35:57 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-03-26 14:35:57 -==> Parameters: admin(String)
+2018-03-26 14:35:57 -<==      Total: 1
+2018-03-26 14:35:57 -耗时 : 12
+2018-03-26 14:35:57 -返回值 : {msg=操作成功, code=0}
+2018-03-26 14:35:57 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 14:35:57 -==> Parameters: 1(Long), admin(String), 登录(String), 13(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-03-26 14:35:57.85(Timestamp)
+2018-03-26 14:35:57 -<==    Updates: 1
+2018-03-26 14:35:58 -请求地址 : http://localhost:8089/index
+2018-03-26 14:35:58 -HTTP METHOD : GET
+2018-03-26 14:35:58 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-03-26 14:35:58 -参数 : [{}]
+2018-03-26 14:35:58 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-03-26 14:35:58 -==> Parameters: 1(Long)
+2018-03-26 14:35:58 -<==      Total: 28
+2018-03-26 14:35:58 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-03-26 14:35:58 -==> Parameters: 138(Long)
+2018-03-26 14:35:58 -<==      Total: 1
+2018-03-26 14:35:58 -耗时 : 57
+2018-03-26 14:35:58 -返回值 : index_v1
+2018-03-26 14:35:58 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 14:35:58 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 57(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2018-03-26 14:35:58.535(Timestamp)
+2018-03-26 14:35:58 -<==    Updates: 1
+2018-03-26 14:35:58 -请求地址 : http://localhost:8089/main
+2018-03-26 14:35:58 -HTTP METHOD : GET
+2018-03-26 14:35:58 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 14:35:58 -参数 : []
+2018-03-26 14:35:58 -耗时 : 0
+2018-03-26 14:35:58 -返回值 : main
+2018-03-26 14:35:58 -请求地址 : http://localhost:8089/oa/notify/message
+2018-03-26 14:35:58 -HTTP METHOD : GET
+2018-03-26 14:35:58 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-03-26 14:35:58 -参数 : []
+2018-03-26 14:35:58 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2018-03-26 14:35:58 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2018-03-26 14:35:58 -<==      Total: 0
+2018-03-26 14:35:58 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2018-03-26 14:35:58 -==> Parameters: 1(Long), 0(String)
+2018-03-26 14:35:58 -<==      Total: 1
+2018-03-26 14:35:58 -耗时 : 10
+2018-03-26 14:35:58 -返回值 : com.bootdo.common.utils.PageUtils@6f992847
+2018-03-26 14:35:58 -请求地址 : http://localhost:8089/main
+2018-03-26 14:35:58 -HTTP METHOD : GET
+2018-03-26 14:35:58 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 14:35:58 -参数 : []
+2018-03-26 14:35:58 -耗时 : 1
+2018-03-26 14:35:58 -返回值 : main
+2018-03-26 15:26:41 -请求地址 : http://localhost:8089/login
+2018-03-26 15:26:41 -HTTP METHOD : GET
+2018-03-26 15:26:41 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-26 15:26:41 -参数 : []
+2018-03-26 15:26:41 -耗时 : 1
+2018-03-26 15:26:41 -返回值 : login
+2018-03-26 15:32:57 -Starting BootdoApplication on USER-20180111OB with PID 25664 (started by Administrator in C:\Users\Administrator\Desktop\开源项目\bootdo\bootdo)
+2018-03-26 15:32:57 -Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 15:32:57 -The following profiles are active: dev
+2018-03-26 15:33:10 -ApplicationContext registed-->org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53fe15ff: startup date [Mon Mar 26 15:32:57 CST 2018]; root of context hierarchy
+2018-03-26 15:33:26 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
+2018-03-26 15:33:26 -==> Parameters: 
+2018-03-26 15:33:26 -<==      Total: 1
+2018-03-26 15:33:26 -Started BootdoApplication in 30.912 seconds (JVM running for 31.925)
+2018-03-26 15:36:06 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-03-26 15:36:06 -==> Parameters: admin(String)
+2018-03-26 15:36:06 -<==      Total: 1
+2018-03-26 15:36:06 -请求地址 : http://localhost:8089/login
+2018-03-26 15:36:06 -HTTP METHOD : POST
+2018-03-26 15:36:06 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-03-26 15:36:06 -参数 : [admin, 111111]
+2018-03-26 15:36:06 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-03-26 15:36:06 -==> Parameters: admin(String)
+2018-03-26 15:36:06 -<==      Total: 1
+2018-03-26 15:36:06 -耗时 : 30
+2018-03-26 15:36:06 -返回值 : {msg=操作成功, code=0}
+2018-03-26 15:36:06 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 15:36:06 -==> Parameters: 1(Long), admin(String), 登录1111111111111111(String), 36(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-03-26 15:36:06.464(Timestamp)
+2018-03-26 15:36:06 -<==    Updates: 1
+2018-03-26 15:36:06 -请求地址 : http://localhost:8089/index
+2018-03-26 15:36:06 -HTTP METHOD : GET
+2018-03-26 15:36:06 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-03-26 15:36:06 -参数 : [{}]
+2018-03-26 15:36:06 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-03-26 15:36:06 -==> Parameters: 1(Long)
+2018-03-26 15:36:06 -<==      Total: 28
+2018-03-26 15:36:06 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-03-26 15:36:06 -==> Parameters: 138(Long)
+2018-03-26 15:36:06 -<==      Total: 1
+2018-03-26 15:36:06 -耗时 : 150
+2018-03-26 15:36:06 -返回值 : index_v1
+2018-03-26 15:36:06 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 15:36:06 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 154(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2018-03-26 15:36:06.76(Timestamp)
+2018-03-26 15:36:06 -<==    Updates: 1
+2018-03-26 15:36:07 -请求地址 : http://localhost:8089/main
+2018-03-26 15:36:07 -HTTP METHOD : GET
+2018-03-26 15:36:07 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 15:36:07 -参数 : []
+2018-03-26 15:36:07 -耗时 : 1
+2018-03-26 15:36:07 -返回值 : main
+2018-03-26 15:36:07 -请求地址 : http://localhost:8089/oa/notify/message
+2018-03-26 15:36:07 -HTTP METHOD : GET
+2018-03-26 15:36:07 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-03-26 15:36:07 -参数 : []
+2018-03-26 15:36:07 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2018-03-26 15:36:07 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2018-03-26 15:36:07 -<==      Total: 0
+2018-03-26 15:36:07 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2018-03-26 15:36:07 -==> Parameters: 1(Long), 0(String)
+2018-03-26 15:36:07 -<==      Total: 1
+2018-03-26 15:36:07 -耗时 : 93
+2018-03-26 15:36:07 -返回值 : com.bootdo.common.utils.PageUtils@199dcb95
+2018-03-26 15:36:08 -请求地址 : http://localhost:8089/main
+2018-03-26 15:36:08 -HTTP METHOD : GET
+2018-03-26 15:36:08 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 15:36:08 -参数 : []
+2018-03-26 15:36:08 -耗时 : 0
+2018-03-26 15:36:08 -返回值 : main
+2018-03-26 15:36:28 -请求地址 : http://localhost:8089/login
+2018-03-26 15:36:28 -HTTP METHOD : GET
+2018-03-26 15:36:28 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-26 15:36:28 -参数 : []
+2018-03-26 15:36:28 -耗时 : 2
+2018-03-26 15:36:28 -返回值 : login
+2018-03-26 16:12:47 -请求地址 : http://localhost:8089/login;JSESSIONID=c25c55d1-25dc-4924-b8af-a6ccb6276956
+2018-03-26 16:12:47 -HTTP METHOD : GET
+2018-03-26 16:12:47 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-26 16:12:47 -参数 : []
+2018-03-26 16:12:47 -耗时 : 0
+2018-03-26 16:12:47 -返回值 : login
+2018-03-26 16:12:56 -请求地址 : http://localhost:8089/
+2018-03-26 16:12:56 -HTTP METHOD : GET
+2018-03-26 16:12:56 -CLASS_METHOD : com.bootdo.system.controller.LoginController.welcome
+2018-03-26 16:12:56 -参数 : [{}]
+2018-03-26 16:12:56 -耗时 : 1
+2018-03-26 16:12:56 -返回值 : redirect:/blog
+2018-03-26 16:12:56 -请求地址 : http://localhost:8089/blog
+2018-03-26 16:12:56 -HTTP METHOD : GET
+2018-03-26 16:12:56 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.blog
+2018-03-26 16:12:56 -参数 : []
+2018-03-26 16:12:56 -耗时 : 1
+2018-03-26 16:12:56 -返回值 : blog/index/main
+2018-03-26 16:12:56 -请求地址 : http://localhost:8089/blog/open/list
+2018-03-26 16:12:56 -HTTP METHOD : GET
+2018-03-26 16:12:56 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.opentList
+2018-03-26 16:12:56 -参数 : [{type=article, limit=10, offset=0}]
+2018-03-26 16:12:56 -==>  Preparing: select `cid`,`title`,`slug`,`created`,`modified`,`content`,`type`,`tags`,`categories`,`hits`,`comments_num`,`allow_comment`,`allow_ping`,`allow_feed`,`status`,`author`,`gtm_create`,`gtm_modified` from blog_content WHERE type = ? order by cid desc limit 0, 10 
+2018-03-26 16:12:56 -==> Parameters: article(String)
+2018-03-26 16:12:56 -<==      Total: 10
+2018-03-26 16:12:56 -==>  Preparing: select count(*) from blog_content WHERE type = ? 
+2018-03-26 16:12:56 -==> Parameters: article(String)
+2018-03-26 16:12:56 -<==      Total: 1
+2018-03-26 16:12:56 -耗时 : 55
+2018-03-26 16:12:56 -返回值 : com.bootdo.common.utils.PageUtils@6eedb0f6
+2018-03-26 16:13:07 -请求地址 : http://localhost:8089/login
+2018-03-26 16:13:07 -HTTP METHOD : GET
+2018-03-26 16:13:07 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-26 16:13:07 -参数 : []
+2018-03-26 16:13:07 -耗时 : 0
+2018-03-26 16:13:07 -返回值 : login
+2018-03-26 16:13:13 -请求地址 : http://localhost:8089/blog/open/post/112
+2018-03-26 16:13:13 -HTTP METHOD : GET
+2018-03-26 16:13:13 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.post
+2018-03-26 16:13:13 -参数 : [112, {}]
+2018-03-26 16:13:13 -==>  Preparing: select `cid`,`title`,`slug`,`created`,`modified`,`content`,`type`,`tags`,`categories`,`hits`,`comments_num`,`allow_comment`,`allow_ping`,`allow_feed`,`status`,`author`,`gtm_create`,`gtm_modified` from blog_content where cid = ? 
+2018-03-26 16:13:13 -==> Parameters: 112(Long)
+2018-03-26 16:13:13 -<==      Total: 1
+2018-03-26 16:13:13 -耗时 : 7
+2018-03-26 16:13:13 -返回值 : blog/index/post
+2018-03-26 16:13:31 -请求地址 : http://localhost:8089/blog/open/post/112
+2018-03-26 16:13:31 -HTTP METHOD : GET
+2018-03-26 16:13:31 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.post
+2018-03-26 16:13:31 -参数 : [112, {}]
+2018-03-26 16:13:31 -==>  Preparing: select `cid`,`title`,`slug`,`created`,`modified`,`content`,`type`,`tags`,`categories`,`hits`,`comments_num`,`allow_comment`,`allow_ping`,`allow_feed`,`status`,`author`,`gtm_create`,`gtm_modified` from blog_content where cid = ? 
+2018-03-26 16:13:31 -==> Parameters: 112(Long)
+2018-03-26 16:13:31 -<==      Total: 1
+2018-03-26 16:13:31 -耗时 : 3
+2018-03-26 16:13:31 -返回值 : blog/index/post
+2018-03-26 16:16:18 -请求地址 : http://localhost:8089/
+2018-03-26 16:16:18 -HTTP METHOD : GET
+2018-03-26 16:16:18 -CLASS_METHOD : com.bootdo.system.controller.LoginController.welcome
+2018-03-26 16:16:18 -参数 : [{}]
+2018-03-26 16:16:18 -耗时 : 0
+2018-03-26 16:16:18 -返回值 : redirect:/blog
+2018-03-26 16:16:18 -请求地址 : http://localhost:8089/blog
+2018-03-26 16:16:18 -HTTP METHOD : GET
+2018-03-26 16:16:18 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.blog
+2018-03-26 16:16:18 -参数 : []
+2018-03-26 16:16:18 -耗时 : 1
+2018-03-26 16:16:18 -返回值 : blog/index/main
+2018-03-26 16:16:18 -请求地址 : http://localhost:8089/blog/open/list
+2018-03-26 16:16:18 -HTTP METHOD : GET
+2018-03-26 16:16:18 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.opentList
+2018-03-26 16:16:18 -参数 : [{type=article, limit=10, offset=0}]
+2018-03-26 16:16:18 -==>  Preparing: select `cid`,`title`,`slug`,`created`,`modified`,`content`,`type`,`tags`,`categories`,`hits`,`comments_num`,`allow_comment`,`allow_ping`,`allow_feed`,`status`,`author`,`gtm_create`,`gtm_modified` from blog_content WHERE type = ? order by cid desc limit 0, 10 
+2018-03-26 16:16:18 -==> Parameters: article(String)
+2018-03-26 16:16:18 -<==      Total: 10
+2018-03-26 16:16:18 -==>  Preparing: select count(*) from blog_content WHERE type = ? 
+2018-03-26 16:16:18 -==> Parameters: article(String)
+2018-03-26 16:16:18 -<==      Total: 1
+2018-03-26 16:16:18 -耗时 : 76
+2018-03-26 16:16:18 -返回值 : com.bootdo.common.utils.PageUtils@27e0b45f
+2018-03-26 16:51:55 -Starting BootdoApplication on USER-20180111OB with PID 31220 (started by Administrator in C:\Users\Administrator\Desktop\开源项目\bootdo\bootdo)
+2018-03-26 16:51:55 -Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-03-26 16:51:55 -The following profiles are active: dev
+2018-03-26 16:52:05 -ApplicationContext registed-->org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53fe15ff: startup date [Mon Mar 26 16:51:55 CST 2018]; root of context hierarchy
+2018-03-26 16:52:09 -请求地址 : http://localhost:8089/login
+2018-03-26 16:52:09 -HTTP METHOD : GET
+2018-03-26 16:52:09 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-26 16:52:09 -参数 : []
+2018-03-26 16:52:09 -耗时 : 0
+2018-03-26 16:52:09 -返回值 : login
+2018-03-26 16:52:15 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-03-26 16:52:15 -==> Parameters: admin(String)
+2018-03-26 16:52:15 -<==      Total: 1
+2018-03-26 16:52:15 -请求地址 : http://localhost:8089/login
+2018-03-26 16:52:15 -HTTP METHOD : POST
+2018-03-26 16:52:15 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-03-26 16:52:15 -参数 : [admin, 111111]
+2018-03-26 16:52:15 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-03-26 16:52:15 -==> Parameters: admin(String)
+2018-03-26 16:52:15 -<==      Total: 1
+2018-03-26 16:52:15 -耗时 : 4
+2018-03-26 16:52:15 -返回值 : {msg=操作成功, code=0}
+2018-03-26 16:52:16 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 16:52:16 -==> Parameters: 1(Long), admin(String), 登录1111111111111111(String), 5(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-03-26 16:52:15.962(Timestamp)
+2018-03-26 16:52:16 -<==    Updates: 1
+2018-03-26 16:52:16 -请求地址 : http://localhost:8089/index
+2018-03-26 16:52:16 -HTTP METHOD : GET
+2018-03-26 16:52:16 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-03-26 16:52:16 -参数 : [{}]
+2018-03-26 16:52:16 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-03-26 16:52:16 -==> Parameters: 1(Long)
+2018-03-26 16:52:16 -<==      Total: 28
+2018-03-26 16:52:16 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-03-26 16:52:16 -==> Parameters: 138(Long)
+2018-03-26 16:52:16 -<==      Total: 1
+2018-03-26 16:52:16 -耗时 : 52
+2018-03-26 16:52:16 -返回值 : index_v1
+2018-03-26 16:52:17 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 16:52:17 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 53(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2018-03-26 16:52:16.973(Timestamp)
+2018-03-26 16:52:17 -<==    Updates: 1
+2018-03-26 16:52:18 -请求地址 : http://localhost:8089/main
+2018-03-26 16:52:18 -HTTP METHOD : GET
+2018-03-26 16:52:18 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 16:52:18 -参数 : []
+2018-03-26 16:52:18 -耗时 : 0
+2018-03-26 16:52:18 -返回值 : main
+2018-03-26 16:52:18 -请求地址 : http://localhost:8089/oa/notify/message
+2018-03-26 16:52:18 -HTTP METHOD : GET
+2018-03-26 16:52:18 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-03-26 16:52:18 -参数 : []
+2018-03-26 16:52:18 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2018-03-26 16:52:18 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2018-03-26 16:52:18 -<==      Total: 0
+2018-03-26 16:52:18 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2018-03-26 16:52:18 -==> Parameters: 1(Long), 0(String)
+2018-03-26 16:52:18 -<==      Total: 1
+2018-03-26 16:52:18 -耗时 : 63
+2018-03-26 16:52:18 -返回值 : com.bootdo.common.utils.PageUtils@5534b862
+2018-03-26 16:52:18 -请求地址 : http://localhost:8089/main
+2018-03-26 16:52:18 -HTTP METHOD : GET
+2018-03-26 16:52:18 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 16:52:18 -参数 : []
+2018-03-26 16:52:18 -耗时 : 1
+2018-03-26 16:52:18 -返回值 : main
+2018-03-26 16:52:21 -Failed to start end point associated with ProtocolHandler ["http-nio-8089"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.bootdo.BootdoApplication.main(BootdoApplication.java:15)
+2018-03-26 16:52:21 -Failed to start connector [Connector[HTTP/1.1-8089]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8089]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.bootdo.BootdoApplication.main(BootdoApplication.java:15)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 common frames omitted
+2018-03-26 16:52:21 -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8089 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8089, or configure this application to listen on another port.
+
+2018-03-26 16:52:24 -==>  Preparing: select distinct m.perms from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id = ur.role_id where ur.user_id = ? 
+2018-03-26 16:52:24 -==> Parameters: 1(Long)
+2018-03-26 16:52:24 -<==      Total: 47
+2018-03-26 16:52:24 -请求地址 : http://localhost:8089/sys/user/
+2018-03-26 16:52:24 -HTTP METHOD : GET
+2018-03-26 16:52:24 -CLASS_METHOD : com.bootdo.system.controller.UserController.user
+2018-03-26 16:52:24 -参数 : [{}]
+2018-03-26 16:52:24 -耗时 : 0
+2018-03-26 16:52:24 -返回值 : system/user/user
+2018-03-26 16:52:25 -请求地址 : http://localhost:8089/system/sysDept/tree
+2018-03-26 16:52:25 -HTTP METHOD : GET
+2018-03-26 16:52:25 -CLASS_METHOD : com.bootdo.system.controller.DeptController.tree
+2018-03-26 16:52:25 -参数 : []
+2018-03-26 16:52:25 -请求地址 : http://localhost:8089/sys/user/list
+2018-03-26 16:52:25 -HTTP METHOD : GET
+2018-03-26 16:52:25 -CLASS_METHOD : com.bootdo.system.controller.UserController.list
+2018-03-26 16:52:25 -参数 : [{limit=10, offset=0, name=, deptId=}]
+2018-03-26 16:52:25 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user order by user_id desc limit ?, ? 
+2018-03-26 16:52:25 -==> Parameters: 0(Integer), 10(Integer)
+2018-03-26 16:52:25 -<==      Total: 10
+2018-03-26 16:52:25 -==>  Preparing: select count(*) from sys_user 
+2018-03-26 16:52:25 -==> Parameters: 
+2018-03-26 16:52:25 -<==      Total: 1
+2018-03-26 16:52:25 -耗时 : 20
+2018-03-26 16:52:25 -返回值 : com.bootdo.common.utils.PageUtils@58ba9f7
+2018-03-26 16:52:25 -==>  Preparing: select `dept_id`,`parent_id`,`name`,`order_num`,`del_flag` from sys_dept order by dept_id desc 
+2018-03-26 16:52:25 -==> Parameters: 
+2018-03-26 16:52:25 -<==      Total: 10
+2018-03-26 16:52:25 -耗时 : 44
+2018-03-26 16:52:25 -返回值 : {"checked":true,"children":[{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"15","parentId":"13","state":{"opened":true},"text":"测试二部"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"14","parentId":"13","state":{"opened":true},"text":"测试一部"}],"hasChildren":true,"hasParent":false,"id":"13","parentId":"0","state":{"opened":true},"text":"测试部"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"12","parentId":"11","state":{"opened":true},"text":"产品一部"}],"hasChildren":true,"hasParent":false,"id":"11","parentId":"0","state":{"opened":true},"text":"产品部"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"10","parentId":"9","state":{"opened":true},"text":"销售一部"}],"hasChildren":true,"hasParent":false,"id":"9","parentId":"0","state":{"opened":true},"text":"销售部"},{"checked":false,"children":[{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"8","parentId":"6","state":{"opened":true},"text":"研发二部"},{"checked":false,"children":[],"hasChildren":false,"hasParent":true,"id":"7","parentId":"6","state":{"opened":true},"text":"研發一部"}],"hasChildren":true,"hasParent":false,"id":"6","parentId":"0","state":{"opened":true},"text":"研发部"}],"hasChildren":true,"hasParent":false,"id":"-1","parentId":"","state":{"opened":true},"text":"顶级节点"}
+2018-03-26 16:52:36 -请求地址 : http://localhost:8089/sys/role
+2018-03-26 16:52:36 -HTTP METHOD : GET
+2018-03-26 16:52:36 -CLASS_METHOD : com.bootdo.system.controller.RoleController.role
+2018-03-26 16:52:36 -参数 : []
+2018-03-26 16:52:36 -耗时 : 0
+2018-03-26 16:52:36 -返回值 : system/role/role
+2018-03-26 16:52:36 -请求地址 : http://localhost:8089/sys/role/list
+2018-03-26 16:52:36 -HTTP METHOD : GET
+2018-03-26 16:52:36 -CLASS_METHOD : com.bootdo.system.controller.RoleController.list
+2018-03-26 16:52:36 -参数 : []
+2018-03-26 16:52:36 -==>  Preparing: select `role_id`,`role_name`,`role_sign`,`remark`,`user_id_create`,`gmt_create`,`gmt_modified` from sys_role order by role_id desc 
+2018-03-26 16:52:36 -==> Parameters: 
+2018-03-26 16:52:36 -<==      Total: 2
+2018-03-26 16:52:36 -耗时 : 7
+2018-03-26 16:52:36 -返回值 : [RoleDO{roleId=59, roleName='普通用户', roleSign='null', remark='基本用户权限', userIdCreate=null, gmtCreate=null, gmtModified=null, menuIds=null}, RoleDO{roleId=1, roleName='超级用户角色', roleSign='admin', remark='拥有最高权限', userIdCreate=2, gmtCreate=2017-08-12 00:43:52.0, gmtModified=2017-08-12 19:14:59.0, menuIds=null}]
+2018-03-26 16:52:39 -请求地址 : http://localhost:8089/sys/menu/
+2018-03-26 16:52:39 -HTTP METHOD : GET
+2018-03-26 16:52:39 -CLASS_METHOD : com.bootdo.system.controller.MenuController.menu
+2018-03-26 16:52:39 -参数 : [{}]
+2018-03-26 16:52:39 -耗时 : 2
+2018-03-26 16:52:39 -返回值 : system/menu/menu
+2018-03-26 16:52:39 -请求地址 : http://localhost:8089/sys/menu/list
+2018-03-26 16:52:39 -HTTP METHOD : GET
+2018-03-26 16:52:39 -CLASS_METHOD : com.bootdo.system.controller.MenuController.list
+2018-03-26 16:52:39 -参数 : [{sort=order_num}]
+2018-03-26 16:52:39 -==>  Preparing: select `menu_id`,`parent_id`,`name`,`url`,`perms`,`type`,`icon`,`order_num`,`gmt_create`,`gmt_modified` from sys_menu order by order_num 
+2018-03-26 16:52:39 -==> Parameters: 
+2018-03-26 16:52:39 -<==      Total: 62
+2018-03-26 16:52:39 -耗时 : 45
+2018-03-26 16:52:39 -返回值 : [MenuDO{menuId=51, parentId=50, name='新增', url='', perms='blog:bContent:add', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=55, parentId=7, name='编辑', url='', perms='sys:role:edit', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=56, parentId=7, name='删除', url='', perms='sys:role:remove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=58, parentId=50, name='编辑', url='', perms='blog:bContent:edit', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=59, parentId=50, name='删除', url='', perms='blog:bContent:remove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=60, parentId=50, name='批量删除', url='', perms='blog:bContent:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=61, parentId=2, name='批量删除', url='', perms='sys:menu:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=62, parentId=7, name='批量删除', url='', perms='sys:role:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=85, parentId=84, name='通知公告', url='oa/notify', perms='oa:notify:notify', type=1, icon='fa fa-pencil-square', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=88, parentId=85, name='删除', url='oa/notify/remove', perms='oa:notify:remove', type=2, icon='fa fa-minus', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=89, parentId=85, name='批量删除', url='oa/notify/batchRemove', perms='oa:notify:batchRemove', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=90, parentId=84, name='我的通知', url='oa/notify/selfNotify', perms='', type=1, icon='fa fa-envelope-square', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=92, parentId=91, name='在线用户', url='sys/online', perms='', type=1, icon='fa fa-user', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=94, parentId=93, name='模型管理', url='activiti/model', perms='', type=1, icon='fa fa-sort-amount-asc', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=95, parentId=94, name='全部权限', url='', perms='activiti:model', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=96, parentId=93, name='流程管理', url='activiti/process', perms='', type=1, icon='fa fa-flag', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=98, parentId=97, name='百度chart', url='/chart/graph_echarts.html', perms='', type=1, icon='fa fa-area-chart', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=99, parentId=96, name='所有权限', url='', perms='act:process', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=101, parentId=93, name='待办任务', url='activiti/task/todo', perms='', type=1, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=104, parentId=77, name='swagger', url='/swagger-ui.html', perms='', type=1, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=1, parentId=0, name='基础管理', url='', perms='', type=0, icon='fa fa-bars', orderNum=0, gmtCreate=Wed Aug 09 22:49:47 CST 2017, gmtModified=null}, MenuDO{menuId=6, parentId=3, name='用户管理', url='sys/user/', perms='sys:user:user', type=1, icon='fa fa-user', orderNum=0, gmtCreate=Thu Aug 10 14:12:11 CST 2017, gmtModified=null}, MenuDO{menuId=12, parentId=6, name='新增', url='', perms='sys:user:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:51:35 CST 2017, gmtModified=null}, MenuDO{menuId=13, parentId=6, name='编辑', url='', perms='sys:user:edit', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:52:06 CST 2017, gmtModified=null}, MenuDO{menuId=14, parentId=6, name='删除', url='null', perms='sys:user:remove', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 10:52:24 CST 2017, gmtModified=null}, MenuDO{menuId=15, parentId=7, name='新增', url='', perms='sys:role:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:56:37 CST 2017, gmtModified=null}, MenuDO{menuId=20, parentId=2, name='新增', url='', perms='sys:menu:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:59:32 CST 2017, gmtModified=null}, MenuDO{menuId=21, parentId=2, name='编辑', url='', perms='sys:menu:edit', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:59:56 CST 2017, gmtModified=null}, MenuDO{menuId=22, parentId=2, name='删除', url='', perms='sys:menu:remove', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 11:00:26 CST 2017, gmtModified=null}, MenuDO{menuId=24, parentId=6, name='批量删除', url='', perms='sys:user:batchRemove', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 17:27:18 CST 2017, gmtModified=null}, MenuDO{menuId=25, parentId=6, name='停用', url='null', perms='sys:user:disable', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 17:27:43 CST 2017, gmtModified=null}, MenuDO{menuId=26, parentId=6, name='重置密码', url='', perms='sys:user:resetPwd', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 17:28:34 CST 2017, gmtModified=null}, MenuDO{menuId=27, parentId=91, name='系统日志', url='common/log', perms='common:log', type=1, icon='fa fa-warning', orderNum=0, gmtCreate=Mon Aug 14 22:11:53 CST 2017, gmtModified=null}, MenuDO{menuId=28, parentId=27, name='刷新', url='null', perms='sys:log:list', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:30:22 CST 2017, gmtModified=null}, MenuDO{menuId=29, parentId=27, name='删除', url='null', perms='sys:log:remove', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:30:43 CST 2017, gmtModified=null}, MenuDO{menuId=30, parentId=27, name='清空', url='null', perms='sys:log:clear', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:31:02 CST 2017, gmtModified=null}, MenuDO{menuId=68, parentId=49, name='发布文章', url='/blog/bContent/add', perms='blog:bContent:add', type=1, icon='fa fa-edit', orderNum=0, gmtCreate=null, gmtModified=null}, MenuDO{menuId=3, parentId=0, name='系统管理', url='null', perms='null', type=0, icon='fa fa-desktop', orderNum=1, gmtCreate=Wed Aug 09 23:06:55 CST 2017, gmtModified=Mon Aug 14 14:13:43 CST 2017}, MenuDO{menuId=7, parentId=3, name='角色管理', url='sys/role', perms='sys:role:role', type=1, icon='fa fa-paw', orderNum=1, gmtCreate=Thu Aug 10 14:13:19 CST 2017, gmtModified=null}, MenuDO{menuId=50, parentId=49, name='文章列表', url='blog/bContent', perms='blog:bContent:bContent', type=1, icon='fa fa-file-image-o', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=57, parentId=91, name='运行监控', url='/druid/index.html', perms='', type=1, icon='fa fa-caret-square-o-right', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=74, parentId=73, name='增加', url='/system/sysDept/add', perms='system:sysDept:add', type=2, icon='null', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=78, parentId=1, name='数据字典', url='/common/dict', perms='common:dict:dict', type=1, icon='fa fa-book', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=86, parentId=85, name='新增', url='oa/notify/add', perms='oa:notify:add', type=2, icon='fa fa-plus', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=2, parentId=3, name='系统菜单', url='sys/menu/', perms='sys:menu:menu', type=1, icon='fa fa-th-list', orderNum=2, gmtCreate=Wed Aug 09 22:55:15 CST 2017, gmtModified=null}, MenuDO{menuId=71, parentId=1, name='文件管理', url='/common/sysFile', perms='common:sysFile:sysFile', type=1, icon='fa fa-folder-open', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=75, parentId=73, name='刪除', url='system/sysDept/remove', perms='system:sysDept:remove', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=79, parentId=78, name='增加', url='/common/dict/add', perms='common:dict:add', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=80, parentId=78, name='编辑', url='/common/dict/edit', perms='common:dict:edit', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=87, parentId=85, name='编辑', url='oa/notify/edit', perms='oa:notify:edit', type=2, icon='fa fa-pencil-square-o', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=48, parentId=77, name='代码生成', url='common/generator', perms='common:generator', type=1, icon='fa fa-code', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=73, parentId=3, name='部门管理', url='/system/sysDept', perms='system:sysDept:sysDept', type=1, icon='fa fa-users', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=76, parentId=73, name='编辑', url='/system/sysDept/edit', perms='system:sysDept:edit', type=2, icon='null', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=81, parentId=78, name='删除', url='/common/dict/remove', perms='common:dict:remove', type=2, icon='', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=72, parentId=77, name='计划任务', url='common/job', perms='common:taskScheduleJob', type=1, icon='fa fa-hourglass-1', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=77, parentId=0, name='系统工具', url='', perms='', type=0, icon='fa fa-gear', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=83, parentId=78, name='批量删除', url='/common/dict/batchRemove', perms='common:dict:batchRemove', type=2, icon='', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=84, parentId=0, name='办公管理', url='', perms='', type=0, icon='fa fa-laptop', orderNum=5, gmtCreate=null, gmtModified=null}, MenuDO{menuId=91, parentId=0, name='系统监控', url='', perms='', type=0, icon='fa fa-video-camera', orderNum=5, gmtCreate=null, gmtModified=null}, MenuDO{menuId=49, parentId=0, name='博客管理', url='', perms='', type=0, icon='fa fa-rss', orderNum=6, gmtCreate=null, gmtModified=null}, MenuDO{menuId=93, parentId=0, name='工作流程', url='', perms='', type=0, icon='fa fa-print', orderNum=6, gmtCreate=null, gmtModified=null}, MenuDO{menuId=97, parentId=0, name='图表管理', url='', perms='', type=0, icon='fa fa-bar-chart', orderNum=7, gmtCreate=null, gmtModified=null}]
+2018-03-26 16:52:47 -请求地址 : http://localhost:8089/sys/menu/add/1
+2018-03-26 16:52:47 -HTTP METHOD : GET
+2018-03-26 16:52:47 -CLASS_METHOD : com.bootdo.system.controller.MenuController.add
+2018-03-26 16:52:47 -参数 : [{}, 1]
+2018-03-26 16:52:47 -==>  Preparing: select `menu_id`,`parent_id`,`name`,`url`,`perms`,`type`,`icon`,`order_num`,`gmt_create`,`gmt_modified` from sys_menu where menu_id = ? 
+2018-03-26 16:52:47 -==> Parameters: 1(Long)
+2018-03-26 16:52:47 -<==      Total: 1
+2018-03-26 16:52:47 -耗时 : 9
+2018-03-26 16:52:47 -返回值 : system/menu/add
+2018-03-26 16:52:47 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 16:52:47 -==> Parameters: 1(Long), admin(String), 添加菜单(String), 9(Integer), com.bootdo.system.controller.MenuController.add()(String), null, 127.0.0.1(String), 2018-03-26 16:52:47.121(Timestamp)
+2018-03-26 16:52:47 -<==    Updates: 1
+2018-03-26 16:54:06 -请求地址 : http://localhost:8089/sys/menu/save
+2018-03-26 16:54:06 -HTTP METHOD : POST
+2018-03-26 16:54:06 -CLASS_METHOD : com.bootdo.system.controller.MenuController.save
+2018-03-26 16:54:06 -参数 : [MenuDO{menuId=null, parentId=1, name='弗雷', url='fdf', perms='43', type=1, icon='fa fa-battery-3', orderNum=null, gmtCreate=null, gmtModified=null}]
+2018-03-26 16:54:06 -==>  Preparing: insert into sys_menu ( `parent_id`, `name`, `url`, `perms`, `type`, `icon`, `order_num`, `gmt_create`, `gmt_modified` ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 16:54:06 -==> Parameters: 1(Long), 弗雷(String), fdf(String), 43(String), 1(Integer), fa fa-battery-3(String), null, null, null
+2018-03-26 16:54:06 -<==    Updates: 1
+2018-03-26 16:54:06 -耗时 : 44
+2018-03-26 16:54:06 -返回值 : {msg=操作成功, code=0}
+2018-03-26 16:54:06 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 16:54:06 -==> Parameters: 1(Long), admin(String), 保存菜单(String), 44(Integer), com.bootdo.system.controller.MenuController.save()(String), null, 127.0.0.1(String), 2018-03-26 16:54:06.966(Timestamp)
+2018-03-26 16:54:06 -<==    Updates: 1
+2018-03-26 16:54:07 -请求地址 : http://localhost:8089/sys/menu/list
+2018-03-26 16:54:07 -HTTP METHOD : GET
+2018-03-26 16:54:07 -CLASS_METHOD : com.bootdo.system.controller.MenuController.list
+2018-03-26 16:54:07 -参数 : [{sort=order_num}]
+2018-03-26 16:54:07 -==>  Preparing: select `menu_id`,`parent_id`,`name`,`url`,`perms`,`type`,`icon`,`order_num`,`gmt_create`,`gmt_modified` from sys_menu order by order_num 
+2018-03-26 16:54:07 -==> Parameters: 
+2018-03-26 16:54:07 -<==      Total: 63
+2018-03-26 16:54:07 -耗时 : 69
+2018-03-26 16:54:07 -返回值 : [MenuDO{menuId=51, parentId=50, name='新增', url='', perms='blog:bContent:add', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=55, parentId=7, name='编辑', url='', perms='sys:role:edit', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=56, parentId=7, name='删除', url='', perms='sys:role:remove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=58, parentId=50, name='编辑', url='', perms='blog:bContent:edit', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=59, parentId=50, name='删除', url='', perms='blog:bContent:remove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=60, parentId=50, name='批量删除', url='', perms='blog:bContent:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=61, parentId=2, name='批量删除', url='', perms='sys:menu:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=62, parentId=7, name='批量删除', url='', perms='sys:role:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=85, parentId=84, name='通知公告', url='oa/notify', perms='oa:notify:notify', type=1, icon='fa fa-pencil-square', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=88, parentId=85, name='删除', url='oa/notify/remove', perms='oa:notify:remove', type=2, icon='fa fa-minus', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=89, parentId=85, name='批量删除', url='oa/notify/batchRemove', perms='oa:notify:batchRemove', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=90, parentId=84, name='我的通知', url='oa/notify/selfNotify', perms='', type=1, icon='fa fa-envelope-square', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=92, parentId=91, name='在线用户', url='sys/online', perms='', type=1, icon='fa fa-user', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=94, parentId=93, name='模型管理', url='activiti/model', perms='', type=1, icon='fa fa-sort-amount-asc', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=95, parentId=94, name='全部权限', url='', perms='activiti:model', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=96, parentId=93, name='流程管理', url='activiti/process', perms='', type=1, icon='fa fa-flag', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=98, parentId=97, name='百度chart', url='/chart/graph_echarts.html', perms='', type=1, icon='fa fa-area-chart', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=99, parentId=96, name='所有权限', url='', perms='act:process', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=101, parentId=93, name='待办任务', url='activiti/task/todo', perms='', type=1, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=104, parentId=77, name='swagger', url='/swagger-ui.html', perms='', type=1, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=105, parentId=1, name='弗雷', url='fdf', perms='43', type=1, icon='fa fa-battery-3', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=1, parentId=0, name='基础管理', url='', perms='', type=0, icon='fa fa-bars', orderNum=0, gmtCreate=Wed Aug 09 22:49:47 CST 2017, gmtModified=null}, MenuDO{menuId=6, parentId=3, name='用户管理', url='sys/user/', perms='sys:user:user', type=1, icon='fa fa-user', orderNum=0, gmtCreate=Thu Aug 10 14:12:11 CST 2017, gmtModified=null}, MenuDO{menuId=12, parentId=6, name='新增', url='', perms='sys:user:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:51:35 CST 2017, gmtModified=null}, MenuDO{menuId=13, parentId=6, name='编辑', url='', perms='sys:user:edit', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:52:06 CST 2017, gmtModified=null}, MenuDO{menuId=14, parentId=6, name='删除', url='null', perms='sys:user:remove', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 10:52:24 CST 2017, gmtModified=null}, MenuDO{menuId=15, parentId=7, name='新增', url='', perms='sys:role:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:56:37 CST 2017, gmtModified=null}, MenuDO{menuId=20, parentId=2, name='新增', url='', perms='sys:menu:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:59:32 CST 2017, gmtModified=null}, MenuDO{menuId=21, parentId=2, name='编辑', url='', perms='sys:menu:edit', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:59:56 CST 2017, gmtModified=null}, MenuDO{menuId=22, parentId=2, name='删除', url='', perms='sys:menu:remove', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 11:00:26 CST 2017, gmtModified=null}, MenuDO{menuId=24, parentId=6, name='批量删除', url='', perms='sys:user:batchRemove', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 17:27:18 CST 2017, gmtModified=null}, MenuDO{menuId=25, parentId=6, name='停用', url='null', perms='sys:user:disable', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 17:27:43 CST 2017, gmtModified=null}, MenuDO{menuId=26, parentId=6, name='重置密码', url='', perms='sys:user:resetPwd', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 17:28:34 CST 2017, gmtModified=null}, MenuDO{menuId=27, parentId=91, name='系统日志', url='common/log', perms='common:log', type=1, icon='fa fa-warning', orderNum=0, gmtCreate=Mon Aug 14 22:11:53 CST 2017, gmtModified=null}, MenuDO{menuId=28, parentId=27, name='刷新', url='null', perms='sys:log:list', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:30:22 CST 2017, gmtModified=null}, MenuDO{menuId=29, parentId=27, name='删除', url='null', perms='sys:log:remove', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:30:43 CST 2017, gmtModified=null}, MenuDO{menuId=30, parentId=27, name='清空', url='null', perms='sys:log:clear', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:31:02 CST 2017, gmtModified=null}, MenuDO{menuId=68, parentId=49, name='发布文章', url='/blog/bContent/add', perms='blog:bContent:add', type=1, icon='fa fa-edit', orderNum=0, gmtCreate=null, gmtModified=null}, MenuDO{menuId=3, parentId=0, name='系统管理', url='null', perms='null', type=0, icon='fa fa-desktop', orderNum=1, gmtCreate=Wed Aug 09 23:06:55 CST 2017, gmtModified=Mon Aug 14 14:13:43 CST 2017}, MenuDO{menuId=7, parentId=3, name='角色管理', url='sys/role', perms='sys:role:role', type=1, icon='fa fa-paw', orderNum=1, gmtCreate=Thu Aug 10 14:13:19 CST 2017, gmtModified=null}, MenuDO{menuId=50, parentId=49, name='文章列表', url='blog/bContent', perms='blog:bContent:bContent', type=1, icon='fa fa-file-image-o', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=57, parentId=91, name='运行监控', url='/druid/index.html', perms='', type=1, icon='fa fa-caret-square-o-right', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=74, parentId=73, name='增加', url='/system/sysDept/add', perms='system:sysDept:add', type=2, icon='null', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=78, parentId=1, name='数据字典', url='/common/dict', perms='common:dict:dict', type=1, icon='fa fa-book', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=86, parentId=85, name='新增', url='oa/notify/add', perms='oa:notify:add', type=2, icon='fa fa-plus', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=2, parentId=3, name='系统菜单', url='sys/menu/', perms='sys:menu:menu', type=1, icon='fa fa-th-list', orderNum=2, gmtCreate=Wed Aug 09 22:55:15 CST 2017, gmtModified=null}, MenuDO{menuId=71, parentId=1, name='文件管理', url='/common/sysFile', perms='common:sysFile:sysFile', type=1, icon='fa fa-folder-open', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=75, parentId=73, name='刪除', url='system/sysDept/remove', perms='system:sysDept:remove', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=79, parentId=78, name='增加', url='/common/dict/add', perms='common:dict:add', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=80, parentId=78, name='编辑', url='/common/dict/edit', perms='common:dict:edit', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=87, parentId=85, name='编辑', url='oa/notify/edit', perms='oa:notify:edit', type=2, icon='fa fa-pencil-square-o', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=48, parentId=77, name='代码生成', url='common/generator', perms='common:generator', type=1, icon='fa fa-code', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=73, parentId=3, name='部门管理', url='/system/sysDept', perms='system:sysDept:sysDept', type=1, icon='fa fa-users', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=76, parentId=73, name='编辑', url='/system/sysDept/edit', perms='system:sysDept:edit', type=2, icon='null', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=81, parentId=78, name='删除', url='/common/dict/remove', perms='common:dict:remove', type=2, icon='', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=72, parentId=77, name='计划任务', url='common/job', perms='common:taskScheduleJob', type=1, icon='fa fa-hourglass-1', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=77, parentId=0, name='系统工具', url='', perms='', type=0, icon='fa fa-gear', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=83, parentId=78, name='批量删除', url='/common/dict/batchRemove', perms='common:dict:batchRemove', type=2, icon='', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=84, parentId=0, name='办公管理', url='', perms='', type=0, icon='fa fa-laptop', orderNum=5, gmtCreate=null, gmtModified=null}, MenuDO{menuId=91, parentId=0, name='系统监控', url='', perms='', type=0, icon='fa fa-video-camera', orderNum=5, gmtCreate=null, gmtModified=null}, MenuDO{menuId=49, parentId=0, name='博客管理', url='', perms='', type=0, icon='fa fa-rss', orderNum=6, gmtCreate=null, gmtModified=null}, MenuDO{menuId=93, parentId=0, name='工作流程', url='', perms='', type=0, icon='fa fa-print', orderNum=6, gmtCreate=null, gmtModified=null}, MenuDO{menuId=97, parentId=0, name='图表管理', url='', perms='', type=0, icon='fa fa-bar-chart', orderNum=7, gmtCreate=null, gmtModified=null}]
+2018-03-26 16:54:10 -请求地址 : http://localhost:8089/index
+2018-03-26 16:54:10 -HTTP METHOD : GET
+2018-03-26 16:54:10 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-03-26 16:54:10 -参数 : [{}]
+2018-03-26 16:54:10 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-03-26 16:54:10 -==> Parameters: 1(Long)
+2018-03-26 16:54:10 -<==      Total: 28
+2018-03-26 16:54:10 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-03-26 16:54:10 -==> Parameters: 138(Long)
+2018-03-26 16:54:10 -<==      Total: 1
+2018-03-26 16:54:10 -耗时 : 12
+2018-03-26 16:54:10 -返回值 : index_v1
+2018-03-26 16:54:10 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 16:54:10 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 12(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2018-03-26 16:54:10.545(Timestamp)
+2018-03-26 16:54:10 -<==    Updates: 1
+2018-03-26 16:54:10 -请求地址 : http://localhost:8089/main
+2018-03-26 16:54:10 -HTTP METHOD : GET
+2018-03-26 16:54:10 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 16:54:10 -参数 : []
+2018-03-26 16:54:10 -耗时 : 1
+2018-03-26 16:54:10 -返回值 : main
+2018-03-26 16:54:10 -请求地址 : http://localhost:8089/oa/notify/message
+2018-03-26 16:54:10 -HTTP METHOD : GET
+2018-03-26 16:54:10 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-03-26 16:54:10 -参数 : []
+2018-03-26 16:54:10 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2018-03-26 16:54:10 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2018-03-26 16:54:10 -<==      Total: 0
+2018-03-26 16:54:10 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2018-03-26 16:54:10 -==> Parameters: 1(Long), 0(String)
+2018-03-26 16:54:10 -<==      Total: 1
+2018-03-26 16:54:10 -耗时 : 10
+2018-03-26 16:54:10 -返回值 : com.bootdo.common.utils.PageUtils@6d101c64
+2018-03-26 16:54:10 -请求地址 : http://localhost:8089/main
+2018-03-26 16:54:10 -HTTP METHOD : GET
+2018-03-26 16:54:10 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 16:54:10 -参数 : []
+2018-03-26 16:54:10 -耗时 : 0
+2018-03-26 16:54:10 -返回值 : main
+2018-03-26 16:54:11 -请求地址 : http://localhost:8089/index
+2018-03-26 16:54:11 -HTTP METHOD : GET
+2018-03-26 16:54:11 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-03-26 16:54:11 -参数 : [{}]
+2018-03-26 16:54:11 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-03-26 16:54:11 -==> Parameters: 1(Long)
+2018-03-26 16:54:11 -<==      Total: 28
+2018-03-26 16:54:11 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-03-26 16:54:11 -==> Parameters: 138(Long)
+2018-03-26 16:54:11 -<==      Total: 1
+2018-03-26 16:54:11 -耗时 : 23
+2018-03-26 16:54:11 -返回值 : index_v1
+2018-03-26 16:54:11 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 16:54:11 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 23(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2018-03-26 16:54:11.093(Timestamp)
+2018-03-26 16:54:11 -<==    Updates: 1
+2018-03-26 16:54:11 -请求地址 : http://localhost:8089/main
+2018-03-26 16:54:11 -HTTP METHOD : GET
+2018-03-26 16:54:11 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 16:54:11 -参数 : []
+2018-03-26 16:54:11 -耗时 : 0
+2018-03-26 16:54:11 -返回值 : main
+2018-03-26 16:54:11 -请求地址 : http://localhost:8089/oa/notify/message
+2018-03-26 16:54:11 -HTTP METHOD : GET
+2018-03-26 16:54:11 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-03-26 16:54:11 -参数 : []
+2018-03-26 16:54:11 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2018-03-26 16:54:11 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2018-03-26 16:54:11 -<==      Total: 0
+2018-03-26 16:54:11 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2018-03-26 16:54:11 -==> Parameters: 1(Long), 0(String)
+2018-03-26 16:54:11 -<==      Total: 1
+2018-03-26 16:54:11 -耗时 : 11
+2018-03-26 16:54:11 -返回值 : com.bootdo.common.utils.PageUtils@fe0a4f
+2018-03-26 16:54:11 -请求地址 : http://localhost:8089/main
+2018-03-26 16:54:11 -HTTP METHOD : GET
+2018-03-26 16:54:11 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 16:54:11 -参数 : []
+2018-03-26 16:54:11 -耗时 : 0
+2018-03-26 16:54:11 -返回值 : main
+2018-03-26 16:54:31 -请求地址 : http://localhost:8089/sys/menu/
+2018-03-26 16:54:31 -HTTP METHOD : GET
+2018-03-26 16:54:31 -CLASS_METHOD : com.bootdo.system.controller.MenuController.menu
+2018-03-26 16:54:31 -参数 : [{}]
+2018-03-26 16:54:31 -耗时 : 0
+2018-03-26 16:54:31 -返回值 : system/menu/menu
+2018-03-26 16:54:31 -请求地址 : http://localhost:8089/sys/menu/list
+2018-03-26 16:54:31 -HTTP METHOD : GET
+2018-03-26 16:54:31 -CLASS_METHOD : com.bootdo.system.controller.MenuController.list
+2018-03-26 16:54:31 -参数 : [{sort=order_num}]
+2018-03-26 16:54:31 -==>  Preparing: select `menu_id`,`parent_id`,`name`,`url`,`perms`,`type`,`icon`,`order_num`,`gmt_create`,`gmt_modified` from sys_menu order by order_num 
+2018-03-26 16:54:31 -==> Parameters: 
+2018-03-26 16:54:31 -<==      Total: 63
+2018-03-26 16:54:31 -耗时 : 21
+2018-03-26 16:54:31 -返回值 : [MenuDO{menuId=51, parentId=50, name='新增', url='', perms='blog:bContent:add', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=55, parentId=7, name='编辑', url='', perms='sys:role:edit', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=56, parentId=7, name='删除', url='', perms='sys:role:remove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=58, parentId=50, name='编辑', url='', perms='blog:bContent:edit', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=59, parentId=50, name='删除', url='', perms='blog:bContent:remove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=60, parentId=50, name='批量删除', url='', perms='blog:bContent:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=61, parentId=2, name='批量删除', url='', perms='sys:menu:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=62, parentId=7, name='批量删除', url='', perms='sys:role:batchRemove', type=2, icon='null', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=85, parentId=84, name='通知公告', url='oa/notify', perms='oa:notify:notify', type=1, icon='fa fa-pencil-square', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=88, parentId=85, name='删除', url='oa/notify/remove', perms='oa:notify:remove', type=2, icon='fa fa-minus', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=89, parentId=85, name='批量删除', url='oa/notify/batchRemove', perms='oa:notify:batchRemove', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=90, parentId=84, name='我的通知', url='oa/notify/selfNotify', perms='', type=1, icon='fa fa-envelope-square', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=92, parentId=91, name='在线用户', url='sys/online', perms='', type=1, icon='fa fa-user', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=94, parentId=93, name='模型管理', url='activiti/model', perms='', type=1, icon='fa fa-sort-amount-asc', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=95, parentId=94, name='全部权限', url='', perms='activiti:model', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=96, parentId=93, name='流程管理', url='activiti/process', perms='', type=1, icon='fa fa-flag', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=98, parentId=97, name='百度chart', url='/chart/graph_echarts.html', perms='', type=1, icon='fa fa-area-chart', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=99, parentId=96, name='所有权限', url='', perms='act:process', type=2, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=101, parentId=93, name='待办任务', url='activiti/task/todo', perms='', type=1, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=104, parentId=77, name='swagger', url='/swagger-ui.html', perms='', type=1, icon='', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=105, parentId=1, name='弗雷', url='fdf', perms='43', type=1, icon='fa fa-battery-3', orderNum=null, gmtCreate=null, gmtModified=null}, MenuDO{menuId=1, parentId=0, name='基础管理', url='', perms='', type=0, icon='fa fa-bars', orderNum=0, gmtCreate=Wed Aug 09 22:49:47 CST 2017, gmtModified=null}, MenuDO{menuId=6, parentId=3, name='用户管理', url='sys/user/', perms='sys:user:user', type=1, icon='fa fa-user', orderNum=0, gmtCreate=Thu Aug 10 14:12:11 CST 2017, gmtModified=null}, MenuDO{menuId=12, parentId=6, name='新增', url='', perms='sys:user:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:51:35 CST 2017, gmtModified=null}, MenuDO{menuId=13, parentId=6, name='编辑', url='', perms='sys:user:edit', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:52:06 CST 2017, gmtModified=null}, MenuDO{menuId=14, parentId=6, name='删除', url='null', perms='sys:user:remove', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 10:52:24 CST 2017, gmtModified=null}, MenuDO{menuId=15, parentId=7, name='新增', url='', perms='sys:role:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:56:37 CST 2017, gmtModified=null}, MenuDO{menuId=20, parentId=2, name='新增', url='', perms='sys:menu:add', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:59:32 CST 2017, gmtModified=null}, MenuDO{menuId=21, parentId=2, name='编辑', url='', perms='sys:menu:edit', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 10:59:56 CST 2017, gmtModified=null}, MenuDO{menuId=22, parentId=2, name='删除', url='', perms='sys:menu:remove', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 11:00:26 CST 2017, gmtModified=null}, MenuDO{menuId=24, parentId=6, name='批量删除', url='', perms='sys:user:batchRemove', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 17:27:18 CST 2017, gmtModified=null}, MenuDO{menuId=25, parentId=6, name='停用', url='null', perms='sys:user:disable', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 17:27:43 CST 2017, gmtModified=null}, MenuDO{menuId=26, parentId=6, name='重置密码', url='', perms='sys:user:resetPwd', type=2, icon='', orderNum=0, gmtCreate=Mon Aug 14 17:28:34 CST 2017, gmtModified=null}, MenuDO{menuId=27, parentId=91, name='系统日志', url='common/log', perms='common:log', type=1, icon='fa fa-warning', orderNum=0, gmtCreate=Mon Aug 14 22:11:53 CST 2017, gmtModified=null}, MenuDO{menuId=28, parentId=27, name='刷新', url='null', perms='sys:log:list', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:30:22 CST 2017, gmtModified=null}, MenuDO{menuId=29, parentId=27, name='删除', url='null', perms='sys:log:remove', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:30:43 CST 2017, gmtModified=null}, MenuDO{menuId=30, parentId=27, name='清空', url='null', perms='sys:log:clear', type=2, icon='null', orderNum=0, gmtCreate=Mon Aug 14 22:31:02 CST 2017, gmtModified=null}, MenuDO{menuId=68, parentId=49, name='发布文章', url='/blog/bContent/add', perms='blog:bContent:add', type=1, icon='fa fa-edit', orderNum=0, gmtCreate=null, gmtModified=null}, MenuDO{menuId=3, parentId=0, name='系统管理', url='null', perms='null', type=0, icon='fa fa-desktop', orderNum=1, gmtCreate=Wed Aug 09 23:06:55 CST 2017, gmtModified=Mon Aug 14 14:13:43 CST 2017}, MenuDO{menuId=7, parentId=3, name='角色管理', url='sys/role', perms='sys:role:role', type=1, icon='fa fa-paw', orderNum=1, gmtCreate=Thu Aug 10 14:13:19 CST 2017, gmtModified=null}, MenuDO{menuId=50, parentId=49, name='文章列表', url='blog/bContent', perms='blog:bContent:bContent', type=1, icon='fa fa-file-image-o', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=57, parentId=91, name='运行监控', url='/druid/index.html', perms='', type=1, icon='fa fa-caret-square-o-right', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=74, parentId=73, name='增加', url='/system/sysDept/add', perms='system:sysDept:add', type=2, icon='null', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=78, parentId=1, name='数据字典', url='/common/dict', perms='common:dict:dict', type=1, icon='fa fa-book', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=86, parentId=85, name='新增', url='oa/notify/add', perms='oa:notify:add', type=2, icon='fa fa-plus', orderNum=1, gmtCreate=null, gmtModified=null}, MenuDO{menuId=2, parentId=3, name='系统菜单', url='sys/menu/', perms='sys:menu:menu', type=1, icon='fa fa-th-list', orderNum=2, gmtCreate=Wed Aug 09 22:55:15 CST 2017, gmtModified=null}, MenuDO{menuId=71, parentId=1, name='文件管理', url='/common/sysFile', perms='common:sysFile:sysFile', type=1, icon='fa fa-folder-open', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=75, parentId=73, name='刪除', url='system/sysDept/remove', perms='system:sysDept:remove', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=79, parentId=78, name='增加', url='/common/dict/add', perms='common:dict:add', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=80, parentId=78, name='编辑', url='/common/dict/edit', perms='common:dict:edit', type=2, icon='null', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=87, parentId=85, name='编辑', url='oa/notify/edit', perms='oa:notify:edit', type=2, icon='fa fa-pencil-square-o', orderNum=2, gmtCreate=null, gmtModified=null}, MenuDO{menuId=48, parentId=77, name='代码生成', url='common/generator', perms='common:generator', type=1, icon='fa fa-code', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=73, parentId=3, name='部门管理', url='/system/sysDept', perms='system:sysDept:sysDept', type=1, icon='fa fa-users', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=76, parentId=73, name='编辑', url='/system/sysDept/edit', perms='system:sysDept:edit', type=2, icon='null', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=81, parentId=78, name='删除', url='/common/dict/remove', perms='common:dict:remove', type=2, icon='', orderNum=3, gmtCreate=null, gmtModified=null}, MenuDO{menuId=72, parentId=77, name='计划任务', url='common/job', perms='common:taskScheduleJob', type=1, icon='fa fa-hourglass-1', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=77, parentId=0, name='系统工具', url='', perms='', type=0, icon='fa fa-gear', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=83, parentId=78, name='批量删除', url='/common/dict/batchRemove', perms='common:dict:batchRemove', type=2, icon='', orderNum=4, gmtCreate=null, gmtModified=null}, MenuDO{menuId=84, parentId=0, name='办公管理', url='', perms='', type=0, icon='fa fa-laptop', orderNum=5, gmtCreate=null, gmtModified=null}, MenuDO{menuId=91, parentId=0, name='系统监控', url='', perms='', type=0, icon='fa fa-video-camera', orderNum=5, gmtCreate=null, gmtModified=null}, MenuDO{menuId=49, parentId=0, name='博客管理', url='', perms='', type=0, icon='fa fa-rss', orderNum=6, gmtCreate=null, gmtModified=null}, MenuDO{menuId=93, parentId=0, name='工作流程', url='', perms='', type=0, icon='fa fa-print', orderNum=6, gmtCreate=null, gmtModified=null}, MenuDO{menuId=97, parentId=0, name='图表管理', url='', perms='', type=0, icon='fa fa-bar-chart', orderNum=7, gmtCreate=null, gmtModified=null}]
+2018-03-26 16:54:38 -请求地址 : http://localhost:8089/sys/menu/add/1
+2018-03-26 16:54:38 -HTTP METHOD : GET
+2018-03-26 16:54:38 -CLASS_METHOD : com.bootdo.system.controller.MenuController.add
+2018-03-26 16:54:38 -参数 : [{}, 1]
+2018-03-26 16:54:38 -==>  Preparing: select `menu_id`,`parent_id`,`name`,`url`,`perms`,`type`,`icon`,`order_num`,`gmt_create`,`gmt_modified` from sys_menu where menu_id = ? 
+2018-03-26 16:54:38 -==> Parameters: 1(Long)
+2018-03-26 16:54:38 -<==      Total: 1
+2018-03-26 16:54:38 -耗时 : 10
+2018-03-26 16:54:38 -返回值 : system/menu/add
+2018-03-26 16:54:38 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 16:54:38 -==> Parameters: 1(Long), admin(String), 添加菜单(String), 11(Integer), com.bootdo.system.controller.MenuController.add()(String), null, 127.0.0.1(String), 2018-03-26 16:54:38.353(Timestamp)
+2018-03-26 16:54:38 -<==    Updates: 1
+2018-03-26 16:54:44 -请求地址 : http://localhost:8089/common/sysFile
+2018-03-26 16:54:44 -HTTP METHOD : GET
+2018-03-26 16:54:44 -CLASS_METHOD : com.bootdo.common.controller.FileController.sysFile
+2018-03-26 16:54:44 -参数 : [{}]
+2018-03-26 16:54:44 -耗时 : 1
+2018-03-26 16:54:44 -返回值 : common/file/file
+2018-03-26 16:54:44 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:54:44 -HTTP METHOD : GET
+2018-03-26 16:54:44 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:54:44 -参数 : [{limit=12, offset=0, type=}]
+2018-03-26 16:54:45 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file order by id desc limit ?, ? 
+2018-03-26 16:54:45 -==> Parameters: 0(Integer), 12(Integer)
+2018-03-26 16:54:45 -<==      Total: 8
+2018-03-26 16:54:45 -==>  Preparing: select count(*) from sys_file 
+2018-03-26 16:54:45 -==> Parameters: 
+2018-03-26 16:54:45 -<==      Total: 1
+2018-03-26 16:54:45 -耗时 : 65
+2018-03-26 16:54:45 -返回值 : com.bootdo.common.utils.PageUtils@74e41532
+2018-03-26 16:54:47 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:54:47 -HTTP METHOD : GET
+2018-03-26 16:54:47 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:54:47 -参数 : [{limit=12, offset=0, type=0}]
+2018-03-26 16:54:47 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
+2018-03-26 16:54:47 -==> Parameters: 0(String), 0(Integer), 12(Integer)
+2018-03-26 16:54:47 -<==      Total: 8
+2018-03-26 16:54:47 -==>  Preparing: select count(*) from sys_file WHERE type = ? 
+2018-03-26 16:54:47 -==> Parameters: 0(String)
+2018-03-26 16:54:47 -<==      Total: 1
+2018-03-26 16:54:47 -耗时 : 7
+2018-03-26 16:54:47 -返回值 : com.bootdo.common.utils.PageUtils@7f21d863
+2018-03-26 16:54:49 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:54:49 -HTTP METHOD : GET
+2018-03-26 16:54:49 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:54:49 -参数 : [{limit=12, offset=0, type=0}]
+2018-03-26 16:54:49 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
+2018-03-26 16:54:49 -==> Parameters: 0(String), 0(Integer), 12(Integer)
+2018-03-26 16:54:49 -<==      Total: 8
+2018-03-26 16:54:49 -==>  Preparing: select count(*) from sys_file WHERE type = ? 
+2018-03-26 16:54:49 -==> Parameters: 0(String)
+2018-03-26 16:54:49 -<==      Total: 1
+2018-03-26 16:54:49 -耗时 : 4
+2018-03-26 16:54:49 -返回值 : com.bootdo.common.utils.PageUtils@508abf39
+2018-03-26 16:54:49 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:54:49 -HTTP METHOD : GET
+2018-03-26 16:54:49 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:54:49 -参数 : [{limit=12, offset=0, type=0}]
+2018-03-26 16:54:49 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
+2018-03-26 16:54:49 -==> Parameters: 0(String), 0(Integer), 12(Integer)
+2018-03-26 16:54:49 -<==      Total: 8
+2018-03-26 16:54:49 -==>  Preparing: select count(*) from sys_file WHERE type = ? 
+2018-03-26 16:54:49 -==> Parameters: 0(String)
+2018-03-26 16:54:49 -<==      Total: 1
+2018-03-26 16:54:49 -耗时 : 4
+2018-03-26 16:54:49 -返回值 : com.bootdo.common.utils.PageUtils@39d0cdaa
+2018-03-26 16:54:57 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:54:57 -HTTP METHOD : GET
+2018-03-26 16:54:57 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:54:57 -参数 : [{limit=12, offset=0, type=1}]
+2018-03-26 16:54:57 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
+2018-03-26 16:54:57 -==> Parameters: 1(String), 0(Integer), 12(Integer)
+2018-03-26 16:54:57 -<==      Total: 0
+2018-03-26 16:54:57 -==>  Preparing: select count(*) from sys_file WHERE type = ? 
+2018-03-26 16:54:57 -==> Parameters: 1(String)
+2018-03-26 16:54:57 -<==      Total: 1
+2018-03-26 16:54:57 -耗时 : 6
+2018-03-26 16:54:57 -返回值 : com.bootdo.common.utils.PageUtils@2f16b5da
+2018-03-26 16:54:58 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:54:58 -HTTP METHOD : GET
+2018-03-26 16:54:58 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:54:58 -参数 : [{limit=12, offset=0, type=2}]
+2018-03-26 16:54:58 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
+2018-03-26 16:54:58 -==> Parameters: 2(String), 0(Integer), 12(Integer)
+2018-03-26 16:54:58 -<==      Total: 0
+2018-03-26 16:54:58 -==>  Preparing: select count(*) from sys_file WHERE type = ? 
+2018-03-26 16:54:58 -==> Parameters: 2(String)
+2018-03-26 16:54:58 -<==      Total: 1
+2018-03-26 16:54:58 -耗时 : 4
+2018-03-26 16:54:58 -返回值 : com.bootdo.common.utils.PageUtils@5e871aec
+2018-03-26 16:54:59 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:54:59 -HTTP METHOD : GET
+2018-03-26 16:54:59 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:54:59 -参数 : [{limit=12, offset=0, type=2}]
+2018-03-26 16:54:59 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
+2018-03-26 16:54:59 -==> Parameters: 2(String), 0(Integer), 12(Integer)
+2018-03-26 16:54:59 -<==      Total: 0
+2018-03-26 16:54:59 -==>  Preparing: select count(*) from sys_file WHERE type = ? 
+2018-03-26 16:54:59 -==> Parameters: 2(String)
+2018-03-26 16:54:59 -<==      Total: 1
+2018-03-26 16:54:59 -耗时 : 12
+2018-03-26 16:54:59 -返回值 : com.bootdo.common.utils.PageUtils@31469a6a
+2018-03-26 16:55:00 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:55:00 -HTTP METHOD : GET
+2018-03-26 16:55:00 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:55:00 -参数 : [{limit=12, offset=0, type=2}]
+2018-03-26 16:55:00 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
+2018-03-26 16:55:00 -==> Parameters: 2(String), 0(Integer), 12(Integer)
+2018-03-26 16:55:00 -<==      Total: 0
+2018-03-26 16:55:00 -==>  Preparing: select count(*) from sys_file WHERE type = ? 
+2018-03-26 16:55:00 -==> Parameters: 2(String)
+2018-03-26 16:55:00 -<==      Total: 1
+2018-03-26 16:55:00 -耗时 : 3
+2018-03-26 16:55:00 -返回值 : com.bootdo.common.utils.PageUtils@66bafdc8
+2018-03-26 16:55:00 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:55:00 -HTTP METHOD : GET
+2018-03-26 16:55:00 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:55:00 -参数 : [{limit=12, offset=0, type=2}]
+2018-03-26 16:55:00 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
+2018-03-26 16:55:00 -==> Parameters: 2(String), 0(Integer), 12(Integer)
+2018-03-26 16:55:00 -<==      Total: 0
+2018-03-26 16:55:00 -==>  Preparing: select count(*) from sys_file WHERE type = ? 
+2018-03-26 16:55:00 -==> Parameters: 2(String)
+2018-03-26 16:55:00 -<==      Total: 1
+2018-03-26 16:55:00 -耗时 : 11
+2018-03-26 16:55:00 -返回值 : com.bootdo.common.utils.PageUtils@3e82142c
+2018-03-26 16:55:01 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:55:01 -HTTP METHOD : GET
+2018-03-26 16:55:01 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:55:01 -参数 : [{limit=12, offset=0, type=3}]
+2018-03-26 16:55:01 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
+2018-03-26 16:55:01 -==> Parameters: 3(String), 0(Integer), 12(Integer)
+2018-03-26 16:55:01 -<==      Total: 0
+2018-03-26 16:55:01 -==>  Preparing: select count(*) from sys_file WHERE type = ? 
+2018-03-26 16:55:01 -==> Parameters: 3(String)
+2018-03-26 16:55:01 -<==      Total: 1
+2018-03-26 16:55:01 -耗时 : 5
+2018-03-26 16:55:01 -返回值 : com.bootdo.common.utils.PageUtils@15530166
+2018-03-26 16:55:01 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:55:01 -HTTP METHOD : GET
+2018-03-26 16:55:01 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:55:01 -参数 : [{limit=12, offset=0, type=3}]
+2018-03-26 16:55:01 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
+2018-03-26 16:55:01 -==> Parameters: 3(String), 0(Integer), 12(Integer)
+2018-03-26 16:55:01 -<==      Total: 0
+2018-03-26 16:55:01 -==>  Preparing: select count(*) from sys_file WHERE type = ? 
+2018-03-26 16:55:01 -==> Parameters: 3(String)
+2018-03-26 16:55:01 -<==      Total: 1
+2018-03-26 16:55:01 -耗时 : 3
+2018-03-26 16:55:01 -返回值 : com.bootdo.common.utils.PageUtils@2659cf4
+2018-03-26 16:55:01 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:55:01 -HTTP METHOD : GET
+2018-03-26 16:55:01 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:55:01 -参数 : [{limit=12, offset=0, type=3}]
+2018-03-26 16:55:01 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
+2018-03-26 16:55:01 -==> Parameters: 3(String), 0(Integer), 12(Integer)
+2018-03-26 16:55:01 -<==      Total: 0
+2018-03-26 16:55:01 -==>  Preparing: select count(*) from sys_file WHERE type = ? 
+2018-03-26 16:55:01 -==> Parameters: 3(String)
+2018-03-26 16:55:01 -<==      Total: 1
+2018-03-26 16:55:01 -耗时 : 3
+2018-03-26 16:55:01 -返回值 : com.bootdo.common.utils.PageUtils@667f2779
+2018-03-26 16:55:01 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:55:01 -HTTP METHOD : GET
+2018-03-26 16:55:01 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:55:01 -参数 : [{limit=12, offset=0, type=3}]
+2018-03-26 16:55:01 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
+2018-03-26 16:55:01 -==> Parameters: 3(String), 0(Integer), 12(Integer)
+2018-03-26 16:55:01 -<==      Total: 0
+2018-03-26 16:55:01 -==>  Preparing: select count(*) from sys_file WHERE type = ? 
+2018-03-26 16:55:01 -==> Parameters: 3(String)
+2018-03-26 16:55:01 -<==      Total: 1
+2018-03-26 16:55:01 -耗时 : 3
+2018-03-26 16:55:01 -返回值 : com.bootdo.common.utils.PageUtils@53792142
+2018-03-26 16:55:02 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:55:02 -HTTP METHOD : GET
+2018-03-26 16:55:02 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:55:02 -参数 : [{limit=12, offset=0, type=99}]
+2018-03-26 16:55:02 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
+2018-03-26 16:55:02 -==> Parameters: 99(String), 0(Integer), 12(Integer)
+2018-03-26 16:55:02 -<==      Total: 0
+2018-03-26 16:55:02 -==>  Preparing: select count(*) from sys_file WHERE type = ? 
+2018-03-26 16:55:02 -==> Parameters: 99(String)
+2018-03-26 16:55:02 -<==      Total: 1
+2018-03-26 16:55:02 -耗时 : 4
+2018-03-26 16:55:02 -返回值 : com.bootdo.common.utils.PageUtils@6dbe50d7
+2018-03-26 16:55:02 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:55:02 -HTTP METHOD : GET
+2018-03-26 16:55:02 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:55:02 -参数 : [{limit=12, offset=0, type=99}]
+2018-03-26 16:55:02 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file WHERE type = ? order by id desc limit ?, ? 
+2018-03-26 16:55:02 -==> Parameters: 99(String), 0(Integer), 12(Integer)
+2018-03-26 16:55:02 -<==      Total: 0
+2018-03-26 16:55:02 -==>  Preparing: select count(*) from sys_file WHERE type = ? 
+2018-03-26 16:55:02 -==> Parameters: 99(String)
+2018-03-26 16:55:02 -<==      Total: 1
+2018-03-26 16:55:02 -耗时 : 2
+2018-03-26 16:55:02 -返回值 : com.bootdo.common.utils.PageUtils@16134790
+2018-03-26 16:55:03 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:55:03 -HTTP METHOD : GET
+2018-03-26 16:55:03 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:55:03 -参数 : [{limit=12, offset=0, type=}]
+2018-03-26 16:55:03 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file order by id desc limit ?, ? 
+2018-03-26 16:55:03 -==> Parameters: 0(Integer), 12(Integer)
+2018-03-26 16:55:03 -<==      Total: 8
+2018-03-26 16:55:03 -==>  Preparing: select count(*) from sys_file 
+2018-03-26 16:55:03 -==> Parameters: 
+2018-03-26 16:55:03 -<==      Total: 1
+2018-03-26 16:55:03 -耗时 : 6
+2018-03-26 16:55:03 -返回值 : com.bootdo.common.utils.PageUtils@2db51dae
+2018-03-26 16:55:03 -请求地址 : http://localhost:8089/common/sysFile/list
+2018-03-26 16:55:03 -HTTP METHOD : GET
+2018-03-26 16:55:03 -CLASS_METHOD : com.bootdo.common.controller.FileController.list
+2018-03-26 16:55:03 -参数 : [{limit=12, offset=0, type=}]
+2018-03-26 16:55:03 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file order by id desc limit ?, ? 
+2018-03-26 16:55:03 -==> Parameters: 0(Integer), 12(Integer)
+2018-03-26 16:55:03 -<==      Total: 8
+2018-03-26 16:55:03 -==>  Preparing: select count(*) from sys_file 
+2018-03-26 16:55:03 -==> Parameters: 
+2018-03-26 16:55:03 -<==      Total: 1
+2018-03-26 16:55:03 -耗时 : 3
+2018-03-26 16:55:03 -返回值 : com.bootdo.common.utils.PageUtils@685deb71
+2018-03-26 16:55:13 -请求地址 : http://localhost:8089/common/dict
+2018-03-26 16:55:13 -HTTP METHOD : GET
+2018-03-26 16:55:13 -CLASS_METHOD : com.bootdo.common.controller.DictController.dict
+2018-03-26 16:55:13 -参数 : []
+2018-03-26 16:55:13 -耗时 : 1
+2018-03-26 16:55:13 -返回值 : common/dict/dict
+2018-03-26 16:55:13 -请求地址 : http://localhost:8089/common/dict/type
+2018-03-26 16:55:13 -HTTP METHOD : GET
+2018-03-26 16:55:13 -CLASS_METHOD : com.bootdo.common.controller.DictController.listType
+2018-03-26 16:55:13 -参数 : []
+2018-03-26 16:55:13 -==>  Preparing: select distinct `type` , description from sys_dict 
+2018-03-26 16:55:13 -==> Parameters: 
+2018-03-26 16:55:13 -<==      Total: 31
+2018-03-26 16:55:13 -耗时 : 10
+2018-03-26 16:55:13 -返回值 : [DictDO{id=null, name='null', value='null', type='del_flag', description='删除标记', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='show_hide', description='显示/隐藏', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='yes_no', description='是/否', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='color', description='颜色值', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='theme', description='主题方案', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_area_type', description='区域类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_office_type', description='机构类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_office_common', description='快捷通用部门', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_office_grade', description='机构等级', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_data_scope', description='数据范围', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_user_type', description='用户类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_theme', description='站点主题', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_module', description='栏目模型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_show_modes', description='展现方式', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_del_flag', description='内容状态', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_posid', description='推荐位', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='cms_guestbook', description='留言板分类', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_leave_type', description='请假类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sys_log_type', description='日志类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='act_type', description='流程类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='act_category', description='流程分类', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_category', description='代码生成分类', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_query_type', description='查询方式', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_show_type', description='字段生成方案', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='gen_java_type', description='Java类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='sex', description='性别', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_notify_type', description='通知通告类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_notify_status', description='通知通告状态', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='oa_notify_read', description='通知通告状态', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='blog_type', description='博客类型', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}, DictDO{id=null, name='null', value='null', type='hobby', description='爱好', sort=null, parentId=null, createBy=null, createDate=null, updateBy=null, updateDate=null, remarks='null', delFlag='null'}]
+2018-03-26 16:55:13 -请求地址 : http://localhost:8089/common/dict/list
+2018-03-26 16:55:13 -HTTP METHOD : GET
+2018-03-26 16:55:13 -CLASS_METHOD : com.bootdo.common.controller.DictController.list
+2018-03-26 16:55:13 -参数 : [{limit=10, offset=0}]
+2018-03-26 16:55:13 -==>  Preparing: select `id`,`name`,`value`,`type`,`description`,`sort`,`parent_id`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from sys_dict order by id desc limit ?, ? 
+2018-03-26 16:55:13 -==> Parameters: 0(Integer), 10(Integer)
+2018-03-26 16:55:13 -<==      Total: 10
+2018-03-26 16:55:13 -==>  Preparing: select count(*) from sys_dict 
+2018-03-26 16:55:13 -==> Parameters: 
+2018-03-26 16:55:13 -<==      Total: 1
+2018-03-26 16:55:13 -耗时 : 6
+2018-03-26 16:55:13 -返回值 : com.bootdo.common.utils.PageUtils@54b51ae6
+2018-03-26 17:00:12 -请求地址 : http://localhost:8089/
+2018-03-26 17:00:12 -HTTP METHOD : GET
+2018-03-26 17:00:12 -CLASS_METHOD : com.bootdo.system.controller.LoginController.welcome
+2018-03-26 17:00:12 -参数 : [{}]
+2018-03-26 17:00:12 -耗时 : 1
+2018-03-26 17:00:12 -返回值 : redirect:/blog
+2018-03-26 17:00:12 -请求地址 : http://localhost:8089/blog
+2018-03-26 17:00:12 -HTTP METHOD : GET
+2018-03-26 17:00:12 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.blog
+2018-03-26 17:00:12 -参数 : []
+2018-03-26 17:00:12 -耗时 : 1
+2018-03-26 17:00:12 -返回值 : blog/index/main
+2018-03-26 17:00:12 -请求地址 : http://localhost:8089/blog/open/list
+2018-03-26 17:00:12 -HTTP METHOD : GET
+2018-03-26 17:00:12 -CLASS_METHOD : com.bootdo.blog.controller.BlogController.opentList
+2018-03-26 17:00:12 -参数 : [{type=article, limit=10, offset=0}]
+2018-03-26 17:00:12 -==>  Preparing: select `cid`,`title`,`slug`,`created`,`modified`,`content`,`type`,`tags`,`categories`,`hits`,`comments_num`,`allow_comment`,`allow_ping`,`allow_feed`,`status`,`author`,`gtm_create`,`gtm_modified` from blog_content WHERE type = ? order by cid desc limit 0, 10 
+2018-03-26 17:00:12 -==> Parameters: article(String)
+2018-03-26 17:00:12 -<==      Total: 10
+2018-03-26 17:00:12 -==>  Preparing: select count(*) from blog_content WHERE type = ? 
+2018-03-26 17:00:12 -==> Parameters: article(String)
+2018-03-26 17:00:12 -<==      Total: 1
+2018-03-26 17:00:12 -耗时 : 45
+2018-03-26 17:00:12 -返回值 : com.bootdo.common.utils.PageUtils@2ee23e18
+2018-03-26 17:00:19 -请求地址 : http://localhost:8089/login
+2018-03-26 17:00:19 -HTTP METHOD : GET
+2018-03-26 17:00:19 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-26 17:00:19 -参数 : []
+2018-03-26 17:00:19 -耗时 : 0
+2018-03-26 17:00:19 -返回值 : login
+2018-03-26 17:09:02 -请求地址 : http://localhost:8089/login
+2018-03-26 17:09:02 -HTTP METHOD : GET
+2018-03-26 17:09:02 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-03-26 17:09:02 -参数 : []
+2018-03-26 17:09:02 -耗时 : 1
+2018-03-26 17:09:02 -返回值 : login
+2018-03-26 17:09:08 -请求地址 : http://localhost:8089/login
+2018-03-26 17:09:08 -HTTP METHOD : POST
+2018-03-26 17:09:08 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-03-26 17:09:08 -参数 : [admin, 111111]
+2018-03-26 17:09:08 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-03-26 17:09:08 -==> Parameters: admin(String)
+2018-03-26 17:09:08 -<==      Total: 1
+2018-03-26 17:09:08 -耗时 : 8
+2018-03-26 17:09:08 -返回值 : {msg=操作成功, code=0}
+2018-03-26 17:09:08 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 17:09:08 -==> Parameters: 1(Long), admin(String), 登录1111111111111111(String), 8(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-03-26 17:09:08.898(Timestamp)
+2018-03-26 17:09:08 -<==    Updates: 1
+2018-03-26 17:09:08 -请求地址 : http://localhost:8089/index
+2018-03-26 17:09:08 -HTTP METHOD : GET
+2018-03-26 17:09:08 -CLASS_METHOD : com.bootdo.system.controller.LoginController.index
+2018-03-26 17:09:08 -参数 : [{}]
+2018-03-26 17:09:08 -==>  Preparing: select distinct m.menu_id , parent_id, name, url, perms,`type`,icon,order_num,gmt_create, gmt_modified from sys_menu m left join sys_role_menu rm on m.menu_id = rm.menu_id left join sys_user_role ur on rm.role_id =ur.role_id where ur.user_id = ? and m.type in(0,1) order by m.order_num 
+2018-03-26 17:09:08 -==> Parameters: 1(Long)
+2018-03-26 17:09:08 -<==      Total: 28
+2018-03-26 17:09:08 -==>  Preparing: select `id`,`type`,`url`,`create_date` from sys_file where id = ? 
+2018-03-26 17:09:08 -==> Parameters: 138(Long)
+2018-03-26 17:09:08 -<==      Total: 1
+2018-03-26 17:09:08 -耗时 : 13
+2018-03-26 17:09:08 -返回值 : index_v1
+2018-03-26 17:09:09 -请求地址 : http://localhost:8089/main
+2018-03-26 17:09:09 -HTTP METHOD : GET
+2018-03-26 17:09:09 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 17:09:09 -参数 : []
+2018-03-26 17:09:09 -耗时 : 0
+2018-03-26 17:09:09 -返回值 : main
+2018-03-26 17:09:09 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-03-26 17:09:09 -==> Parameters: 1(Long), admin(String), 请求访问主页(String), 13(Integer), com.bootdo.system.controller.LoginController.index()(String), null, 127.0.0.1(String), 2018-03-26 17:09:08.988(Timestamp)
+2018-03-26 17:09:09 -<==    Updates: 1
+2018-03-26 17:09:09 -请求地址 : http://localhost:8089/oa/notify/message
+2018-03-26 17:09:09 -HTTP METHOD : GET
+2018-03-26 17:09:09 -CLASS_METHOD : com.bootdo.oa.controller.NotifyController.message
+2018-03-26 17:09:09 -参数 : []
+2018-03-26 17:09:09 -==>  Preparing: select DISTINCT n.id ,`type`,`title`,`content`,`files`,r.is_read,`status`,`create_by`,`create_date`,`update_by`,`update_date`,`remarks`,`del_flag` from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id WHERE r.is_read = ? and r.user_id = ? order by is_read ASC, update_date DESC limit ?, ? 
+2018-03-26 17:09:09 -==> Parameters: 0(String), 1(Long), 0(Integer), 3(Integer)
+2018-03-26 17:09:09 -<==      Total: 0
+2018-03-26 17:09:09 -==>  Preparing: select count(*) from oa_notify_record r right JOIN oa_notify n on r.notify_id = n.id where r.user_id =? and r.is_read = ? 
+2018-03-26 17:09:09 -==> Parameters: 1(Long), 0(String)
+2018-03-26 17:09:09 -<==      Total: 1
+2018-03-26 17:09:09 -耗时 : 5
+2018-03-26 17:09:09 -返回值 : com.bootdo.common.utils.PageUtils@2478d54a
+2018-03-26 17:09:09 -请求地址 : http://localhost:8089/main
+2018-03-26 17:09:09 -HTTP METHOD : GET
+2018-03-26 17:09:09 -CLASS_METHOD : com.bootdo.system.controller.LoginController.main
+2018-03-26 17:09:09 -参数 : []
+2018-03-26 17:09:09 -耗时 : 0
+2018-03-26 17:09:09 -返回值 : main

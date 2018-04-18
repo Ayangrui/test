@@ -1,0 +1,154 @@
+2018-04-02 15:19:30 -Starting BootdoApplication on USER-20180111OB with PID 235680 (started by Administrator in C:\Users\Administrator\Desktop\开源项目\bootdo\bootdo)
+2018-04-02 15:19:30 -Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-04-02 15:19:30 -The following profiles are active: dev
+2018-04-02 15:19:56 -ApplicationContext registed-->org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53fe15ff: startup date [Mon Apr 02 15:19:31 CST 2018]; root of context hierarchy
+2018-04-02 15:20:25 -==>  Preparing: select `id`,`cron_expression`,`method_name`,`is_concurrent`,`description`,`update_by`,`bean_class`,`create_date`,`job_status`,`job_group`,`update_date`,`create_by`,`spring_bean`,`job_name` from sys_task order by id desc 
+2018-04-02 15:20:25 -==> Parameters: 
+2018-04-02 15:20:25 -<==      Total: 1
+2018-04-02 15:20:25 -Started BootdoApplication in 55.993 seconds (JVM running for 57.373)
+2018-04-02 15:21:46 -Starting BootdoApplication on USER-20180111OB with PID 235996 (started by Administrator in C:\Users\Administrator\Desktop\开源项目\bootdo\bootdo)
+2018-04-02 15:21:46 -Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-04-02 15:21:46 -The following profiles are active: dev
+2018-04-02 15:22:08 -ApplicationContext registed-->org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53fe15ff: startup date [Mon Apr 02 15:21:47 CST 2018]; root of context hierarchy
+2018-04-02 15:22:25 -Failed to start end point associated with ProtocolHandler ["http-nio-8089"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.bootdo.BootdoApplication.main(BootdoApplication.java:15)
+2018-04-02 15:22:25 -Failed to start connector [Connector[HTTP/1.1-8089]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8089]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.bootdo.BootdoApplication.main(BootdoApplication.java:15)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 14 common frames omitted
+2018-04-02 15:22:26 -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8089 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8089, or configure this application to listen on another port.
+
+2018-04-02 15:23:17 -请求地址 : http://localhost:8089/login
+2018-04-02 15:23:17 -HTTP METHOD : GET
+2018-04-02 15:23:17 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-04-02 15:23:17 -参数 : []
+2018-04-02 15:23:17 -耗时 : 2
+2018-04-02 15:23:17 -返回值 : login
+2018-04-02 15:23:18 -请求地址 : http://localhost:8089/login;JSESSIONID=9f71c291-5b9e-4394-b907-52945ea2bbf8
+2018-04-02 15:23:18 -HTTP METHOD : GET
+2018-04-02 15:23:18 -CLASS_METHOD : com.bootdo.system.controller.LoginController.login
+2018-04-02 15:23:18 -参数 : []
+2018-04-02 15:23:18 -耗时 : 1
+2018-04-02 15:23:18 -返回值 : login
+2018-04-02 15:23:30 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-04-02 15:23:30 -==> Parameters: admin(String)
+2018-04-02 15:23:30 -<==      Total: 1
+2018-04-02 15:23:30 -请求地址 : http://localhost:8089/login
+2018-04-02 15:23:30 -HTTP METHOD : POST
+2018-04-02 15:23:30 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-04-02 15:23:30 -参数 : [admin, admin]
+2018-04-02 15:23:30 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-04-02 15:23:30 -==> Parameters: admin(String)
+2018-04-02 15:23:30 -<==      Total: 1
+2018-04-02 15:23:30 -耗时 : 24
+2018-04-02 15:23:30 -返回值 : {msg=用户或密码错误, code=500}
+2018-04-02 15:23:30 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-04-02 15:23:30 -==> Parameters: -1(Long), 获取用户信息为空(String), 登录(String), 24(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-04-02 15:23:30.969(Timestamp)
+2018-04-02 15:23:30 -<==    Updates: 1
+2018-04-02 15:23:36 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-04-02 15:23:36 -==> Parameters: admin(String)
+2018-04-02 15:23:36 -<==      Total: 1
+2018-04-02 15:23:36 -请求地址 : http://localhost:8089/login
+2018-04-02 15:23:36 -HTTP METHOD : POST
+2018-04-02 15:23:36 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-04-02 15:23:36 -参数 : [admin, 123456]
+2018-04-02 15:23:36 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-04-02 15:23:36 -==> Parameters: admin(String)
+2018-04-02 15:23:36 -<==      Total: 1
+2018-04-02 15:23:36 -耗时 : 3
+2018-04-02 15:23:36 -返回值 : {msg=用户或密码错误, code=500}
+2018-04-02 15:23:36 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-04-02 15:23:36 -==> Parameters: -1(Long), 获取用户信息为空(String), 登录(String), 4(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-04-02 15:23:36.063(Timestamp)
+2018-04-02 15:23:36 -<==    Updates: 1
+2018-04-02 15:24:01 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-04-02 15:24:01 -==> Parameters: admin(String)
+2018-04-02 15:24:01 -<==      Total: 1
+2018-04-02 15:24:01 -请求地址 : http://localhost:8089/login
+2018-04-02 15:24:01 -HTTP METHOD : POST
+2018-04-02 15:24:01 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-04-02 15:24:01 -参数 : [admin, admin]
+2018-04-02 15:24:01 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-04-02 15:24:01 -==> Parameters: admin(String)
+2018-04-02 15:24:01 -<==      Total: 1
+2018-04-02 15:24:01 -耗时 : 3
+2018-04-02 15:24:01 -返回值 : {msg=用户或密码错误, code=500}
+2018-04-02 15:24:01 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-04-02 15:24:01 -==> Parameters: -1(Long), 获取用户信息为空(String), 登录(String), 4(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-04-02 15:24:01.297(Timestamp)
+2018-04-02 15:24:01 -<==    Updates: 1
+2018-04-02 15:31:35 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-04-02 15:31:35 -==> Parameters: admin(String)
+2018-04-02 15:31:35 -<==      Total: 1
+2018-04-02 15:31:35 -请求地址 : http://localhost:8089/login
+2018-04-02 15:31:35 -HTTP METHOD : POST
+2018-04-02 15:31:35 -CLASS_METHOD : com.bootdo.system.controller.LoginController.ajaxLogin
+2018-04-02 15:31:35 -参数 : [admin, 123456]
+2018-04-02 15:31:35 -==>  Preparing: select `user_id`,`username`,`name`,`password`,`dept_id`,`email`,`mobile`,`status`,`user_id_create`,`gmt_create`,`gmt_modified`,`sex`,`birth`,`pic_id`,`live_address`,`hobby`,`province`,`city`,`district` from sys_user WHERE username = ? order by user_id desc 
+2018-04-02 15:31:35 -==> Parameters: admin(String)
+2018-04-02 15:31:35 -<==      Total: 1
+2018-04-02 15:31:35 -耗时 : 6
+2018-04-02 15:31:35 -返回值 : {msg=用户或密码错误, code=500}
+2018-04-02 15:31:35 -==>  Preparing: insert into sys_log ( `user_id`, `username`, `operation`, `time`, `method`, `params`, `ip`, `gmt_create` ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2018-04-02 15:31:35 -==> Parameters: -1(Long), 获取用户信息为空(String), 登录(String), 6(Integer), com.bootdo.system.controller.LoginController.ajaxLogin()(String), null, 127.0.0.1(String), 2018-04-02 15:31:35.297(Timestamp)
+2018-04-02 15:31:35 -<==    Updates: 1
