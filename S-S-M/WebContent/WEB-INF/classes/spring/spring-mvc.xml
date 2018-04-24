@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:contxt="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+	
+	
+	<contxt:component-scan base-package="com.etoak">
+		<contxt:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+	</contxt:component-scan>
+	
+	<mvc:annotation-driven></mvc:annotation-driven>
+	
+	<!-- springmvc的拦截器 -->
+	<!-- <mvc:interceptors>
+		创建一个拦截器
+		<mvc:interceptor>
+			mapping需要拦截的请求
+			<mvc:mapping path="/**"/>
+			不需要拦截的请求
+			<mvc:exclude-mapping path="/login/login"/>   
+			<mvc:exclude-mapping path="/"/> 
+			<bean class="com.etoak.commons.interceptor.AuthInterceptor">
+				<property name="list">
+					<list>
+						<value>login</value>
+						<value>zhuce</value>
+					</list>
+				</property>
+			</bean>
+		</mvc:interceptor>
+	</mvc:interceptors> -->
+	
+	
+	<mvc:resources location="/skin/" mapping="/skin/**"/>
+	<mvc:view-controller path="/" view-name="login"/>
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- 视图前缀 -->
+		<property name="prefix" value="/pages/models/"></property>
+		<!-- 视图后缀 -->
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+	<!--spring 上传的必须品  -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	</bean>
+	<bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+    <property name="supportedMediaTypes">
+    <list>
+    <value>text/html;charset=UTF-8</value>
+    </list>
+    </property>
+    </bean>
+ 
+ 
+   <!--json 乱码的 -->
+    <bean
+        class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <ref bean="stringHttpMessageConverter" />
+            </list>
+        </property>
+    </bean>
+    
+    <bean id="stringHttpMessageConverter"
+        class="org.springframework.http.converter.StringHttpMessageConverter">
+        <property name="supportedMediaTypes">
+            <list>
+                <value>text/html;charset=UTF-8</value>
+            </list>
+        </property>
+    </bean>
+
+
+
+
+</beans>

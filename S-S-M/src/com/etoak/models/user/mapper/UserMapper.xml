@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<mapper namespace="com.etoak.models.user.mapper.UserMapper">
+	
+	<insert id="add" parameterType="com.etoak.models.user.bean.User">
+		INSERT INTO 
+			et_user(id,username,password,nickname,email,tel,create_time,status) 
+		 		VALUES(#{id},#{username},#{password},#{nickname},#{email},#{tel},#{createTime},#{status})
+	</insert>
+	
+	<select id="selectAll" resultMap="rMap">
+		SELECT 
+			id,username,password,nickname,email,tel,create_time,status 
+		FROM 
+			et_user
+		<where>
+			<if test="username!=null">
+				and username like '%${username}%'
+			</if>	
+		</where>
+	</select>
+	
+	<select id="getUsername" parameterType="java.lang.String" resultMap="rMap">
+		SELECT
+			id,username,password,nickname,email,tel,create_time,status 
+		FROM 
+			et_user
+		WHERE 
+			username=#{username}
+	</select>
+	
+	<select id="findRoleByUserId" parameterType="java.lang.String" resultType="java.lang.String">
+		select
+			b.role_id
+		from 
+			et_user a
+		left join
+			user_role b
+		on a.id = b.user_id
+		where
+			a.id = #{userId}
+		
+		
+	</select>
+	
+	<select id="findUserByPrimaryKey" parameterType="java.lang.String" resultMap="rMap">
+		select
+			id,username,password,nickname,email,tel,create_time,status 
+		from
+			et_user
+		where
+			id=#{id}
+	</select>
+	
+	<update id="update" parameterType="com.etoak.models.user.bean.User">
+		update 
+			et_user 
+		set
+			nickname=#{nickname},
+			email=#{email},
+			tel=#{tel},
+			status=#{status}
+		where 
+			id=#{id}
+	
+	</update>
+	
+	<delete id="deleteUser" parameterType="java.lang.String">
+		delete 
+			from
+			et_user
+		where
+	 	id=#{id}
+	</delete>
+	
+	<delete id="delRolesByUserId" parameterType="java.lang.String">
+		delete from 
+			user_role
+		where
+			user_id = #{userId}
+	</delete>
+	
+	<insert id="addUserRoles" parameterType="java.util.Map">
+		INSERT into 
+			user_role(id,user_id,role_id)
+		VALUES 
+			<foreach collection="list" item="roleId" 
+				separator=",">
+				
+				(UUID(),#{userId},#{roleId})	
+				
+				
+			</foreach>
+		
+	</insert>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<resultMap type="com.etoak.models.user.bean.User" id="rMap">
+		<id column="id" property="id"></id>
+		<result column="username" property="username"></result>
+		<result column="password" property="password"></result>
+		<result column="nickname" property="nickname"></result>
+		<result column="email" property="email"></result>
+		<result column="tel" property="tel"></result>
+		<result column="create_time" property="createTime"></result>
+		<result column="status" property="status"></result>
+	</resultMap>
+</mapper>

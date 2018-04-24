@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	 
+	    <!-- ?useUnicode=true&amp;characterEncoding=UTF8"  如何防止在前端变成？的加入数据库中的方法等等 -->
+	    <!-- "jdbc:mysql://localhost:3306/Mysql" 当中的Mysql是 我们连接客户端时给他们器的名称 -->
+ 		
+ 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+ 		<property name="url" value="jdbc:mysql://localhost:3306/mysql?useUnicode=true&amp;characterEncoding=UTF8"></property>
+ 		<property name="username" value="root"></property>
+ 		<property name="password" value="root"></property>
+ 	</bean>
+	
+	<!-- mybatis工厂 -->         
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+ 		<property name="dataSource" ref="dataSource"></property>
+ 		<property name="configLocation" value="classpath:mybatis/mybatis.cfg.xml"></property>
+ 	</bean>
+	
+	<!-- 扫描实例化接口 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+ 		<property name="basePackage" value="com.etoak.**.mapper"></property>
+ 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+ 	</bean>
+ 	
+ 	
+ 	
+ 	
+ 	<!-- 事务管理器 -->
+ 	<bean id="tx" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+ 		<property name="dataSource" ref="dataSource"></property>
+ 	</bean> 
+ 	
+ 	<tx:annotation-driven transaction-manager="tx"/> 
+
+</beans>

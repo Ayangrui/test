@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<mapper namespace="com.etoak.models.role.mapper.RoleMapper">
+	
+	<resultMap type="com.etoak.models.role.bean.Role" id="rMap">
+		<id column="id" property="id"></id>
+		<result column="name" property="name" />
+		<result column="status" property="status" />
+		<result column="create_time" property="createTime" />
+		<result column="remark" property="remark" />
+	</resultMap>
+
+	<sql id="role_columns">
+		id,name,status,create_time,remark
+	</sql>
+	<select id="findInfoByRoleIds" parameterType="java.util.List" resultMap="rMap">
+		SELECT
+			<include refid="role_columns" />
+		FROM
+			et_role
+		WHERE
+			status=1 and id in
+			<foreach collection="list" item="id"
+				open="(" close=")" separator=",">
+				#{id}	
+			</foreach>
+	</select>
+	
+	<select id="getRoleTreeStatus" parameterType="java.lang.String" resultMap="rMap">
+		SELECT 
+			<include refid="role_columns"></include>
+		FROM
+			et_role
+		WHERE
+			status = #{status}	
+	</select>
+</mapper>

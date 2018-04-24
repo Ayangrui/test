@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<mapper namespace="com.etoak.models.bookid.mapper.BookidMapper">
+
+
+
+    <!--这是mybatis 当中的sql语句和字段的映射关系  -->
+    <resultMap type="com.etoak.models.bookid.bean.Book" id="Map">
+		 <id column="id" property="id"></id>
+		 <result column="name" property="name"></result>
+		  <result column="price" property="price"></result>
+		  <result column="author" property="author"></result>
+		  <result column="publishdate" property="publishdate"></result>
+		  <result column="bookcount" property="bookcount"></result>
+		  <result column="category" property="category"></result>
+		  <result column="status" property="status"></result>
+	</resultMap>
+ 
+
+     <!--添加书籍的名称     parameterMap 他是字段值和属性的对应关系不一样时候去利用的是parameterMap-->
+	 <insert id="addbookid"  parameterType="com.etoak.models.bookid.bean.Book">
+		INSERT INTO 
+			  book(name,price,author,publishdate,bookcount,category,status) 
+		 	   VALUES
+		 		(#{name},#{price},#{author},#{publishdate},#{bookcount},#{category},#{status})
+		 		     
+	</insert>
+
+
+    <!--查询book java.util.List   list 是个容器  一般不能放在resulttye中去       resultMap 指代是否是数据库中的数据和 属性是否一样 而不是集合    但是当resultType 时候说的就是他的类型了-->
+     <select id="queryAlled"  resultType="int">
+      select count(*) from  book 
+     </select>
+
+  
+      <select id="queryAll"  resultType="com.etoak.models.bookid.bean.Book">
+        select * from  book 
+      </select>
+
+
+      <!-- 每页显示的数据 -->   
+      <!--parametertype 如何是多个参数时候要吧参数封装进Map集合当中去  -->  
+      <select id="querySome"  parameterType="int"
+             resultType="com.etoak.models.bookid.bean.Book">
+     
+             select * from book limit #{0} ,#{1} 
+     
+      </select>
+     
+       <delete id="deletebook1" parameterType="Integer">
+       delete from book where id=#{id}; 
+       
+       </delete>
+     
+
+
+
+
+</mapper>

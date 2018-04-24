@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ToolUser</display-name>
+  
+  <!-- spring配置 开始 -->
+ 	<listener>
+		<listener-class>
+			org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener>
+	 <context-param>
+	 	<param-name>contextConfigLocation</param-name>
+	 	<param-value>classpath:spring/applicationContext*.xml</param-value>
+	 </context-param>
+ <!-- spring配置 结束 -->
+  <!-- 处理post请求乱码 start -->
+  <filter>
+  	<filter-name>encoding</filter-name>
+  	<filter-class>
+  		org.springframework.web.filter.CharacterEncodingFilter
+  	</filter-class>
+  	<init-param>
+  		<param-name>encoding</param-name>
+  		<param-value>UTF-8</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>forceEncoding</param-name>
+  		<param-value>true</param-value>
+  	</init-param>
+  </filter>
+  <filter-mapping>
+  	<filter-name>encoding</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <!-- 处理post请求乱码 end -->
+  
+  
+   <!-- cxf配置开始 -->
+	 <servlet>
+	 	<servlet-name>cxf</servlet-name>
+	  	<servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
+	 </servlet>
+	 <servlet-mapping>
+	  	<servlet-name>cxf</servlet-name>
+	  	<url-pattern>/ws/*</url-pattern>
+	 </servlet-mapping>
+  <!-- cxf配置结束 -->
+  
+  <!-- springmvc配置开始 -->
+	  <servlet>
+	  	<servlet-name>etoak</servlet-name>
+	  	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	  	<init-param>
+	  		<param-name>contextConfigLocation</param-name>
+	  		<param-value>classpath:spring/spring-mvc.xml</param-value>
+	  	</init-param>
+	  </servlet>
+	  <servlet-mapping>
+	  	<servlet-name>etoak</servlet-name>
+	  	<url-pattern>*.do</url-pattern>
+	  </servlet-mapping>
+	   <servlet-mapping>
+	  	<servlet-name>etoak</servlet-name>
+	  	<url-pattern>/</url-pattern>
+	  </servlet-mapping>
+  <!-- springmvc配置结束 -->
+  
+    <!-- 有关Shiro配置 start-->     
+    <!-- shiro过滤器，DelegatingFilterProxy通过代理模式将spring容器的bean和filter关联起来 -->
+    <!--Shiro过滤器-->
+   <!--  <filter>
+        <filter-name>shiroFilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <init-param>
+            <param-name>targetFilterLifecycle</param-name>
+            <param-value>true</param-value>
+        </init-param>
+     </filter>
+     <filter-mapping>
+        <filter-name>shiroFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+    </filter-mapping> -->
+	  <!--shiro end  -->
+   
+   <!--duird 链接数据库的插件 阿里的  -->
+    
+    <!-- druid监控 -->
+    <servlet>
+        <servlet-name>DruidStatView</servlet-name>
+        <servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
+        <init-param>
+            <!-- 用户名 -->
+            <param-name>loginUsername</param-name>
+            <param-value>druid</param-value>
+        </init-param>
+        <init-param>
+            <!-- 密码 -->
+            <param-name>loginPassword</param-name>
+            <param-value>dream</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DruidStatView</servlet-name>
+        <url-pattern>/druid/*</url-pattern>
+    </servlet-mapping>
+   <!-- end -->
+   
+     <!-- 设计session 过期的时间 -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+   
+   
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+	
+<mapper namespace="com.etoak.models.permissions.mapper.PermissionsMapper">
+	<resultMap type="com.etoak.models.permissions.bean.Permissions" id="rMap">
+		<id column="id" property="id" />
+		<result column="pid" property="pid"></result>
+		<result column="name" property="name"></result>
+		<result column="leaf" property="leaf"></result>
+		<result column="status" property="status"></result>
+		<result column="url" property="url"></result>
+		<result column="remark" property="remark"></result>
+		<result column="create_time" property="createTime"></result>
+	</resultMap>
+	<sql id="perm_columns">
+		id,pid,name,leaf,status,url,remark,create_time
+	</sql>
+	
+	<select id="getPermAll" parameterType="java.lang.String" resultMap="rMap">
+		SELECT
+			<include refid="perm_columns" />
+		FROM 
+			et_permissions
+		WHERE
+			pid=#{id} and status=1
+	</select>
+	
+	<select id="getPermByRole" parameterType="java.util.Map" resultMap="rMap">
+		SELECT
+			c.id,c.pid,c.name,c.leaf,c.status,c.url,c.remark,c.create_time
+		FROM
+			et_role a
+		left join
+			role_permissions b
+		on
+			a.id = b.role_id
+		left join
+			et_permissions c
+		on 
+			b.perm_id =  c.id
+		WHERE
+			a.status=1
+			and a.id in 
+			<foreach collection="list" item="roleId"
+				open="(" close=")" separator=",">
+				#{roleId}	
+			</foreach>
+			and c.status=1 
+			and c.pid = #{id}
+	</select>
+	
+</mapper>

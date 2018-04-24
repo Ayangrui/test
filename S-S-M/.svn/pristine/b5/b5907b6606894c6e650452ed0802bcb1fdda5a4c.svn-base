@@ -1,0 +1,5 @@
+#
+jdbc.driverClassName=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/et1610
+jdbc.username=root
+jdbc.password=263484

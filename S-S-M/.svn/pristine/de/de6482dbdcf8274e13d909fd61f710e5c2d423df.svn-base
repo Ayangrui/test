@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+
+<mapper namespace="com.etoak.models.easyui.mapper.TreeMapper">
+	
+	<resultMap type="com.etoak.models.easyui.bean.Et_permissions" id="rMap">
+		<id column="id" property="id"></id>
+		<result column="pid" property="pid"></result>
+		<result column="leaf" property="leaf"></result>
+		<result column="name" property="name"></result>
+		<result column="status" property="status"></result>
+		<result column="url" property="url"></result>
+		<result column="remark" property="remark"></result>
+		<result column="create_time" property="createTime"></result>
+	</resultMap>
+	
+	<select id="findInfoByPid" parameterType="java.lang.String" resultMap="rMap">
+		SELECT
+			id,pid,leaf,name,status,url,remark,create_time
+		FROM
+			et_permissions
+		WHERE
+			pid=#{id}
+	</select>
+	
+	<select id="findCountByPid" parameterType="java.lang.String" resultType="java.lang.Long">
+		SELECT
+			count(*)
+		FROM
+			et_permissions
+		WHERE
+			pid=#{id}
+	</select>
+	
+	<select id="findAll" resultMap="rMap">
+		SELECT
+			id,pid,leaf,name,status,url,remark,create_time
+		FROM
+			et_permissions
+	</select>
+	
+	<delete id="deleteEt" parameterType="int">
+		delete from et_permissions where id=#{id}
+	</delete>
+	
+	
+</mapper>
